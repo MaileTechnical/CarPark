@@ -61,6 +61,7 @@ DateTime::Create(
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("a93d30a1-090d-45a5-aa24-320d8639ea8d",
@@ -78,6 +79,7 @@ generate Carpark1:Open() to carpark;',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("fdf6ae16-d9e5-423d-a18b-ebc98bd74e6c",
@@ -88,7 +90,7 @@ INSERT INTO PE_PE
 INSERT INTO S_SYNC
 	VALUES ("a5e051a2-7e87-4f8a-a732-29bd93619287",
 	"00000000-0000-0000-0000-000000000000",
-	'Create040121FeeSchedules',
+	'CreateFeeSchedules',
 	'Create fee schedules for April 1, 2021.',
 	'select any carpark from instances of Carpark;
 
@@ -98,7 +100,7 @@ INSERT INTO S_SYNC
 // Set opening time to 6:00 a.m. local time, adjusted to UTC because TIM 
 // operates on UTC.
 toss = TIM::set_time( 
-  year:2021,
+  year:2025,
   month:4,
   day:1,
   hour:6+7,
@@ -180,6 +182,7 @@ relate Step1_LatePM to FeeSched_LatePM across R22.''is rate for'';',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("a5e051a2-7e87-4f8a-a732-29bd93619287",
@@ -268,6 +271,7 @@ relate PaymentMachine to carpark across R11.''accepts payments for'';
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("22140147-998b-49ec-ab68-48995a6fc4f8",
@@ -282,11 +286,12 @@ INSERT INTO S_SYNC
 	'Initialize with ''canned'' peripherals for automated testing.',
 	'::CreateNonPeripheralPEIs();
 ::CreatePeripheralPEIs();
-::Create040121FeeSchedules();
+::CreateFeeSchedules();
 ::Run();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("74018c44-1961-4d44-a55f-4de35e78db22",
@@ -300,11 +305,12 @@ INSERT INTO S_SYNC
 	'InitializeWithoutPeripheralPEIs',
 	'Initialize for deployment; peripherals will register dynamically.',
 	'::CreateNonPeripheralPEIs();
-::Create040121FeeSchedules();
+::CreateFeeSchedules();
 ::Run();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("df086320-14c4-4bb3-bb79-134294a2fc3b",
@@ -333,6 +339,7 @@ not just those associated with a particular instance of Carpark.',
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../CarparkControl.xtuml');
 INSERT INTO S_SYS_PROXY
