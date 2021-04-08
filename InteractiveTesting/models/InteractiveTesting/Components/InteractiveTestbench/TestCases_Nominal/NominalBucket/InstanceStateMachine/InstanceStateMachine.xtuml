@@ -517,7 +517,7 @@ send ExitStand::Register( Location:"Lane 1" );
 // operates on local time, so adjust the desired local
 // time to UTC before passing it to TIM.
 toss = TIM::set_time(
-  year:2021,
+  year:2025,
   month:4,
   day:1,
   hour:7+7,
@@ -768,11 +768,11 @@ INSERT INTO GD_NCS
 	VALUES ("a6a8f77f-ce3c-4e1f-ab9f-ac39c7ba0ddb");
 INSERT INTO DIM_ND
 	VALUES (456.000000,
-	354.000000,
+	413.000000,
 	"a6a8f77f-ce3c-4e1f-ab9f-ac39c7ba0ddb");
 INSERT INTO DIM_GE
 	VALUES (4381.000000,
-	2868.000000,
+	2809.000000,
 	"a6a8f77f-ce3c-4e1f-ab9f-ac39c7ba0ddb",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
@@ -812,11 +812,11 @@ INSERT INTO GD_NCS
 	VALUES ("5d9b4bdf-69db-46cd-abc2-555f8cda394e");
 INSERT INTO DIM_ND
 	VALUES (440.000000,
-	708.000000,
+	779.000000,
 	"5d9b4bdf-69db-46cd-abc2-555f8cda394e");
 INSERT INTO DIM_GE
 	VALUES (4896.000000,
-	2988.000000,
+	2917.000000,
 	"5d9b4bdf-69db-46cd-abc2-555f8cda394e",
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO DIM_ELE
