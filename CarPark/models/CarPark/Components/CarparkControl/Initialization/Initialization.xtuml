@@ -91,7 +91,7 @@ INSERT INTO S_SYNC
 	VALUES ("a5e051a2-7e87-4f8a-a732-29bd93619287",
 	"00000000-0000-0000-0000-000000000000",
 	'CreateFeeSchedules',
-	'Create fee schedules for April 1, 2021.',
+	'Create fee schedules for April 1, 2025.',
 	'select any carpark from instances of Carpark;
 
 // This fee schedule is valid only for the specified day.  When testing expands
