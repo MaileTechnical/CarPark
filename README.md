@@ -5,18 +5,20 @@ The following configurations exist:
 1. Interactive Testing.  Employs a modeled test bench, enabling interactive testing with Verifier and Ciera-generated code using `pom-testbench.xml`.
 2. Automated Testing.  Intended for regression testing with both Verifier and generated code, this configuration employs a modeled test suite covering many use cases.  Use `pom-autotest.xml` for this one.
 3. Browser-based Clients.  Leverages browser-based clients representing system peripherals such as entry and exit stands, payment machines, and an operator console.  Intended for testing and demonstration of code generated from the xtUML model of the carpark control system connected to externally produced code.  Use `pom-clients.xml` for this configuration.
-## Importing for Interactive Testing
+## Populating a Workspace
+Instructions for populating a workspace for each configuration are provided below.  In all cases, the "CarPark" project referred to below is the xtUML project by that name, not the top-level directory which happens to have the same name.  The import wizard lists each project in the repository as "CarPark/<projectName>", so the "CarPark" project referred to below is shown as "CarPark/CarPark".
+### Interactive Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
 2. Import the following projects from this repository:
 - CarPark
 - InteractiveTesting
-## Importing for Automated Testing
+### Automated Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
 2. Import the TestFramework project from the [TestFramework repository.](https://github.com/amullarney/TestFramework)
 3. Import the following projects from this repository:
 - CarPark
 - CarParkTestbench
-## Importing for Browser-based Clients
+### Browser-based Clients
 1. Add the built-in external entities provided by BridgePoint 7 or later.
 2. Import the following projects from this repository:
 - CarPark
@@ -26,7 +28,8 @@ The following configurations exist:
 - OperatorConsole
 - PaymentMachine
 - TestControl
-## Run for Interactive Testing (Verifier)
+## Running the Application on Verifier
+### Interactive Testing
 1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-InterativeTest
 2. Enable "Log model execution activity"
 3. Disable "Run deterministically"
@@ -34,7 +37,7 @@ The following configurations exist:
 5. Select the InteractiveTesting configuration within the InteractiveTesting project
 6. Run Verifier using this debug configuration
 7. Refer to the class descriptions of the test case classes within the InteractiveTestbench component for details on executing each test case or a bucket of multiple test cases.
-## Run for Automated Testing (Verifier)
+### Automated Testing
 1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-AutoTest
 2. Enable "Log model execution activity"
 3. Disable "Run deterministically"
