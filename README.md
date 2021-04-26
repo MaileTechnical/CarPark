@@ -6,18 +6,19 @@ The following configurations exist:
 2. Automated Testing.  Intended for regression testing with both Verifier and generated code, this configuration employs a modeled test suite covering many use cases.  Use `pom-autotest.xml` for this one.
 3. Browser-based Clients.  Leverages browser-based clients representing system peripherals such as entry and exit stands, payment machines, and an operator console.  Intended for testing and demonstration of code generated from the xtUML model of the carpark control system connected to externally produced code.  Use `pom-clients.xml` for this configuration.
 ## Importing for Interactive Testing
-1. Import the following projects from this repository:
+1. Add the built-in external entities provided by BridgePoint 7 or later.
+2. Import the following projects from this repository:
 - CarPark
 - InteractiveTesting
-2. Add the built-in external entities provided by BridgePoint 7 or later.
 ## Importing for Automated Testing
-1. Import the following projects from this repository:
+1. Add the built-in external entities provided by BridgePoint 7 or later.
+2. Import the TestFramework project from the [TestFramework repository.](https://github.com/amullarney/TestFramework)
+3. Import the following projects from this repository:
 - CarPark
 - CarParkTestbench
-2. Add the built-in external entities provided by BridgePoint 7 or later.
-3. Import the TestFramework project from this [repository.](https://github.com/amullarney/TestFramework)
 ## Importing for Browser-based Clients
-1. Import the following projects from this repository:
+1. Add the built-in external entities provided by BridgePoint 7 or later.
+2. Import the following projects from this repository:
 - CarPark
 - Deployment
 - EntryStand
@@ -25,7 +26,6 @@ The following configurations exist:
 - OperatorConsole
 - PaymentMachine
 - TestControl
-2. Add the built-in external entities provided by BridgePoint 7 or later.
 ## Run for Interactive Testing (Verifier)
 1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-InterativeTest
 2. Enable "Log model execution activity"
