@@ -7,6 +7,11 @@ The following configurations exist:
 3. Browser-based Clients.  Leverages browser-based clients representing system peripherals such as entry and exit stands, payment machines, and an operator console.  Intended for testing and demonstration of code generated from the xtUML model of the carpark control system connected to externally produced code.  Use `pom-clients.xml` for this configuration.
 ## Populating a Workspace
 Instructions for populating a workspace for each configuration are provided below.  In all cases, the "CarPark" project referred to below is the xtUML project by that name, not the top-level directory which happens to have the same name.  The import wizard lists each project in the repository as "CarPark/\<projectName>", so the "CarPark" project referred to below is shown as "CarPark/CarPark".
+
+The built-in external entities provided by BridgePoint 7 (or later) can be added to a workspace as follows:
+1. Create an xtUML project named *BuiltInEEs*.
+2. Add a folder named *EEs* to the *BuiltInEEs* project.
+3. Select the *EEs* folder and select the context menu entry (right-click) for "Add Built-in External Entities".
 ### Interactive Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
 2. Import the following projects from this repository:
