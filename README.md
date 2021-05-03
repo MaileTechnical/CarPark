@@ -34,13 +34,13 @@ The built-in external entities provided by BridgePoint 7 (or later) can be added
 - PaymentMachine
 - TestControl
 ## Running the Application on Verifier
-As part of creating a debug configuration, the specific configuration of the application to be executed must be specified.  This is accomplished by selecting a package containing a collection of component references connected through ports.  
+As part of creating a debug configuration, the specific configuration of the application to be executed must be specified.  This is accomplished by selecting a **package** containing a collection of component references connected through ports.  
 ### Interactive Testing
 1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-InterativeTest
 2. Enable "Log model execution activity"
 3. Disable "Run deterministically"
 4. Disable "Enable simulated time"
-5. Select the InteractiveTesting configuration package within the InteractiveTesting project
+5. Select the InteractiveTesting configuration **package** within the InteractiveTesting **xtUML project**
 6. Run Verifier using this debug configuration
 7. Refer to the class descriptions of the test case classes within the InteractiveTestbench component for details on executing each test case or a bucket of multiple test cases.
 ### Automated Testing
@@ -48,7 +48,7 @@ As part of creating a debug configuration, the specific configuration of the app
 2. Enable "Log model execution activity"
 3. Disable "Run deterministically"
 4. Disable "Enable simulated time"
-5. Select the AutoTest configuration package within the InteractiveTesting project
+5. Select the AutoTest configuration **package** within the CarParkTestbench **xtUML project**
 6. Run Verifier using this debug configuration 
 7. Execute any one of the functions found in TestFunctions package.
 ## Build and Run with Ciera
