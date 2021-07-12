@@ -43,8 +43,8 @@
     <pluginRepository>
       <id>snapshots-repo</id>
       <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases><enabled>true</enabled></releases>
-      <snapshots><enabled>false</enabled></snapshots>
+      <releases><enabled>false</enabled></releases>
+      <snapshots><enabled>true</enabled></snapshots>
     </pluginRepository>
     <pluginRepository>
       <id>spring-releases</id>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>io.ciera</groupId>
       <artifactId>runtime</artifactId>
-      <version>2.4.0</version>
+      <version>2.4.1-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>org.xtuml</groupId>
@@ -157,7 +157,7 @@
       <plugin>
         <groupId>io.ciera</groupId>
         <artifactId>ciera-maven-plugin</artifactId>
-        <version>2.4.0</version>
+        <version>2.4.1-SNAPSHOT</version>
         <executions>
           <execution>
             <id>pre-build</id>
