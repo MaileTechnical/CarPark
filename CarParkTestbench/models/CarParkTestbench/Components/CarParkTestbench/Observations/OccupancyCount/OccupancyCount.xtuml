@@ -25,6 +25,7 @@ obs.AddTriggered( seqLabel:param.seqLabel, timeLimit:0, key:"Occupancy", concurr
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("c7c1e118-5377-4bb8-bf64-e598d56ef48c",
@@ -67,6 +68,7 @@ end if;',
 	1,
 	'',
 	"4ff1cc8d-88af-4fc9-b577-c32f5fce357a",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("40c8687f-2a71-407a-b32e-c2324e8db88c",

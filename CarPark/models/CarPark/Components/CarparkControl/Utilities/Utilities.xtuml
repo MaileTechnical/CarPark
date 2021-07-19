@@ -46,6 +46,7 @@ end if;',
 	"ba5eda7a-def5-0000-0000-000000000002",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO S_SPARM
 	VALUES ("bfee653c-c286-42ec-b2f1-5e32a6a08e4f",
@@ -84,6 +85,7 @@ end if;',
 	"ba5eda7a-def5-0000-0000-000000000002",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO S_SPARM
 	VALUES ("2b5e71fc-8c4d-4e35-b310-14f56cea4473",
@@ -130,6 +132,7 @@ not just those associated with a particular instance of Carpark.',
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../CarparkControl.xtuml');
 INSERT INTO S_SYS_PROXY

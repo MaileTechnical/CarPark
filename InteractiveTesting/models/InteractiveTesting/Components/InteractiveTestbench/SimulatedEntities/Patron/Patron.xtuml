@@ -19,6 +19,7 @@ patron.Behavior = param.behavior;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("2127b3a2-5ac5-40dd-9755-7b5426fc144b",

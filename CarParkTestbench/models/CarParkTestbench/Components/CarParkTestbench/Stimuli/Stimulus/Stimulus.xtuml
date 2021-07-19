@@ -19,6 +19,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("0190467b-f029-457d-9592-9c02de1c6adb",
@@ -72,6 +73,7 @@ end if;
 	1,
 	'',
 	"7dc12142-2b30-4125-b1b9-8ccb88eaf92d",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("d5030684-e08f-4fb0-b6fc-26b242c76e33",
@@ -84,6 +86,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"6e8a40f3-f6f3-403e-9055-b4a9fe9a8825",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("a689df1e-6766-4229-a06d-541309960fb2",
@@ -97,6 +100,7 @@ The value of the interval timer may be read by subsequent observations on this s
 	1,
 	'',
 	"d5030684-e08f-4fb0-b6fc-26b242c76e33",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("5d040972-2c35-4925-aec7-1d6ab5821f3c",
@@ -142,6 +146,7 @@ delete object instance self;',
 	1,
 	'',
 	"f0da030d-7330-4d06-87c1-aa34149cc98b",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("f0da030d-7330-4d06-87c1-aa34149cc98b",
@@ -156,6 +161,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"a689df1e-6766-4229-a06d-541309960fb2",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("70c0deb7-ccbc-4126-ae62-055e271207bc",

@@ -1555,6 +1555,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("58d65580-3a47-4d54-ad80-d56bcbe8af23",
@@ -1587,6 +1588,7 @@ INSERT INTO C_PO_PROXY
 	'Entry',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("58d65580-3a47-4d54-ad80-d56bcbe8af23",
@@ -1619,6 +1621,7 @@ INSERT INTO C_PO_PROXY
 	'Exit',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("58d65580-3a47-4d54-ad80-d56bcbe8af23",
@@ -1651,6 +1654,7 @@ INSERT INTO C_PO_PROXY
 	'Payer',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO PE_PE
 	VALUES ("58d65580-3a47-4d54-ad80-d56bcbe8af23",
@@ -1673,6 +1677,7 @@ not just those associated with a particular instance of Carpark.',
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_IC
@@ -1713,6 +1718,7 @@ INSERT INTO C_PO_PROXY
 	'CarPark',
 	0,
 	0,
+	'',
 	'../../../../EntryStand/models/EntryStand/Components/EntryStand/EntryStand.xtuml');
 INSERT INTO CL_POR
 	VALUES ("24d714f2-1d5f-4a76-a0c9-fe3acab0fde9",
@@ -1743,6 +1749,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../../../../EntryStand/models/EntryStand/Components/EntryStand/EntryStand.xtuml');
 INSERT INTO PE_PE
 	VALUES ("24d714f2-1d5f-4a76-a0c9-fe3acab0fde9",
@@ -1759,6 +1766,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../EntryStand/models/EntryStand/Components/EntryStand/EntryStand.xtuml');
 INSERT INTO CL_IC
@@ -1799,6 +1807,7 @@ INSERT INTO C_PO_PROXY
 	'CarPark',
 	0,
 	0,
+	'',
 	'../../../../ExitStand/models/ExitStand/Components/ExitStand/ExitStand.xtuml');
 INSERT INTO CL_POR
 	VALUES ("e21aa37f-f287-47f4-9e29-bb840490f255",
@@ -1829,6 +1838,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../../../../ExitStand/models/ExitStand/Components/ExitStand/ExitStand.xtuml');
 INSERT INTO PE_PE
 	VALUES ("e21aa37f-f287-47f4-9e29-bb840490f255",
@@ -1845,6 +1855,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../ExitStand/models/ExitStand/Components/ExitStand/ExitStand.xtuml');
 INSERT INTO CL_IC
@@ -1885,6 +1896,7 @@ INSERT INTO C_PO_PROXY
 	'CarPark',
 	0,
 	0,
+	'',
 	'../../../../OperatorConsole/models/OperatorConsole/Components/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO CL_POR
 	VALUES ("25dcce9a-7f60-4d40-8e47-7185e086a3a4",
@@ -1917,6 +1929,7 @@ INSERT INTO C_PO_PROXY
 	'ExitHelp',
 	0,
 	0,
+	'',
 	'../../../../OperatorConsole/models/OperatorConsole/Components/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO CL_POR
 	VALUES ("25dcce9a-7f60-4d40-8e47-7185e086a3a4",
@@ -1949,6 +1962,7 @@ INSERT INTO C_PO_PROXY
 	'EntryHelp',
 	0,
 	0,
+	'',
 	'../../../../OperatorConsole/models/OperatorConsole/Components/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO PE_PE
 	VALUES ("25dcce9a-7f60-4d40-8e47-7185e086a3a4",
@@ -1965,6 +1979,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../OperatorConsole/models/OperatorConsole/Components/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO CL_IC
@@ -2005,6 +2020,7 @@ INSERT INTO C_PO_PROXY
 	'CarPark',
 	0,
 	0,
+	'',
 	'../../../../PaymentMachine/models/PaymentMachine/Components/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO PE_PE
 	VALUES ("abb6e320-a599-4ae7-ad2a-226dd9a2c6f3",
@@ -2021,6 +2037,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../PaymentMachine/models/PaymentMachine/Components/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO CL_IC
@@ -2047,6 +2064,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../TestControl/models/TestControl/Components/TestControl/TestControl.xtuml');
 INSERT INTO C_SF

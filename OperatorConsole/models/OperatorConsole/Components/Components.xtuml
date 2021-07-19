@@ -171,7 +171,7 @@ INSERT INTO GD_GE
 	"465be930-6ffb-4223-8d35-9301b70cf278",
 	94,
 	0,
-	'OperatorConsole::Components::OperatorConsole::Port1::Intercom');
+	'OperatorConsole::Components::OperatorConsole::ExitHelp::Intercom');
 INSERT INTO GD_CON
 	VALUES ("f573884e-ec00-416c-8b33-a00842f1cfa2",
 	"00000000-0000-0000-0000-000000000000");
@@ -271,7 +271,7 @@ INSERT INTO GD_GE
 	"d572c889-e4e1-4eb3-88f7-aa712f8a9ec5",
 	94,
 	0,
-	'OperatorConsole::Components::OperatorConsole::Port2::Unnamed Interface');
+	'OperatorConsole::Components::OperatorConsole::EntryHelp::Intercom');
 INSERT INTO GD_CON
 	VALUES ("f1a2af67-807e-4053-a0cf-10cef683a3bd",
 	"00000000-0000-0000-0000-000000000000");

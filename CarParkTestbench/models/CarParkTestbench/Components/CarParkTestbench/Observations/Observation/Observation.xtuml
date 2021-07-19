@@ -43,6 +43,7 @@ Note:
 	1,
 	'',
 	"5b5c9463-a199-4a29-847e-495b504cd07f",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("701f21e1-8283-4a3c-bb52-cd85cb8735f9",
@@ -132,6 +133,7 @@ end if;',
 	1,
 	'',
 	"29da92d2-991a-4952-9084-77d2bb72fa60",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("6573f450-20f8-40ff-8aa9-23e85bf50f03",
@@ -146,6 +148,7 @@ send TESTSEQ::ObservationDone( observationId:self.observationId, success:param.s
 	1,
 	'',
 	"d4cb7a5b-7e6f-4b84-8406-5bc94f596291",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("ed8a77d9-d589-4fe1-bd24-b32cca6adf68",
@@ -167,6 +170,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"6573f450-20f8-40ff-8aa9-23e85bf50f03",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("0a6cbcfb-8389-42f0-a831-a0aee1a89d17",
@@ -231,6 +235,7 @@ delete object instance self;',
 	1,
 	'',
 	"29ae3bf8-a1e3-46c5-802a-ec3c735593d1",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("d4cb7a5b-7e6f-4b84-8406-5bc94f596291",
@@ -243,6 +248,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"68f40ae7-2afe-4fae-ae53-5893cd01d93c",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("5b5c9463-a199-4a29-847e-495b504cd07f",
@@ -267,6 +273,7 @@ Note:
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("60c8effc-5e99-4b02-bc2c-8c55157dfa8e",

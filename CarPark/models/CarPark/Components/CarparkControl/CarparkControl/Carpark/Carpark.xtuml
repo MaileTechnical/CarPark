@@ -23,6 +23,7 @@ return self.LastTicketNumber;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("9b88b74c-75aa-4a2a-8e42-ad2560a67a90",

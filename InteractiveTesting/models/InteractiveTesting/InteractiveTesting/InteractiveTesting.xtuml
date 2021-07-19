@@ -998,6 +998,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("f36b69c1-5b13-4415-a438-f627f4b6e64f",
@@ -1030,6 +1031,7 @@ INSERT INTO C_PO_PROXY
 	'Entry',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("f36b69c1-5b13-4415-a438-f627f4b6e64f",
@@ -1062,6 +1064,7 @@ INSERT INTO C_PO_PROXY
 	'Exit',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("f36b69c1-5b13-4415-a438-f627f4b6e64f",
@@ -1094,6 +1097,7 @@ INSERT INTO C_PO_PROXY
 	'Payer',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO PE_PE
 	VALUES ("f36b69c1-5b13-4415-a438-f627f4b6e64f",
@@ -1116,6 +1120,7 @@ not just those associated with a particular instance of Carpark.',
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_IC
@@ -1156,6 +1161,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../Components/InteractiveTestbench/InteractiveTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("c7ae691e-5519-4048-988e-093e5f739afa",
@@ -1186,6 +1192,7 @@ INSERT INTO C_PO_PROXY
 	'EntryStand',
 	0,
 	0,
+	'',
 	'../Components/InteractiveTestbench/InteractiveTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("c7ae691e-5519-4048-988e-093e5f739afa",
@@ -1216,6 +1223,7 @@ INSERT INTO C_PO_PROXY
 	'ExitStand',
 	0,
 	0,
+	'',
 	'../Components/InteractiveTestbench/InteractiveTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("c7ae691e-5519-4048-988e-093e5f739afa",
@@ -1246,6 +1254,7 @@ INSERT INTO C_PO_PROXY
 	'Payer',
 	0,
 	0,
+	'',
 	'../Components/InteractiveTestbench/InteractiveTestbench.xtuml');
 INSERT INTO PE_PE
 	VALUES ("c7ae691e-5519-4048-988e-093e5f739afa",
@@ -1262,6 +1271,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../Components/InteractiveTestbench/InteractiveTestbench.xtuml');
 INSERT INTO C_SF

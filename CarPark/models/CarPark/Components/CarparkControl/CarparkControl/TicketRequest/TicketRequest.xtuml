@@ -40,6 +40,7 @@ end if;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("435a02c9-7b1e-410e-a81b-ccfbde9e286a",
@@ -73,6 +74,7 @@ delete object instance QHead;',
 	1,
 	'',
 	"ff9fe101-4959-4c6c-afed-b1948ae6bac0",
+	0,
 	0);
 INSERT INTO O_ID
 	VALUES (0,

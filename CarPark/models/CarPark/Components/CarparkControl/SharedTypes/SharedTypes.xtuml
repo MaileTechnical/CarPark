@@ -66,6 +66,7 @@ not just those associated with a particular instance of Carpark.',
 	"00000000-0000-0000-0000-000000000000",
 	0,
 	'',
+	'',
 	'../CarparkControl.xtuml');
 INSERT INTO S_SYS_PROXY
 	VALUES ("887b82b9-56ec-4387-b15a-8b42f655cdba",

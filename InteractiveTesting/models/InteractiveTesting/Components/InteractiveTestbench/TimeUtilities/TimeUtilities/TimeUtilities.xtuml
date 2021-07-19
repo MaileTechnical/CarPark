@@ -39,6 +39,7 @@ return current_time;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("ad55c248-6045-4624-b93e-85c63f6435ad",

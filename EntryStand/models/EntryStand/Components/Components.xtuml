@@ -166,7 +166,7 @@ INSERT INTO GD_GE
 	"19010449-8aed-4ab1-a6ff-480630acdc9c",
 	93,
 	0,
-	'EntryStand::Components::EntryStand::Port1::Unnamed Interface');
+	'EntryStand::Components::EntryStand::Operator::Intercom');
 INSERT INTO GD_CON
 	VALUES ("2b5b2f0f-a071-43d7-a0d6-c210b5d3576d",
 	"00000000-0000-0000-0000-000000000000");

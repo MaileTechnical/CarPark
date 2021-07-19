@@ -9,6 +9,7 @@ INSERT INTO C_C
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'');
 INSERT INTO GD_MD
 	VALUES ("77c51073-d550-49a0-9c24-1958fb700e9e",
@@ -826,7 +827,8 @@ INSERT INTO C_PO
 	"267abe01-5adc-42d6-aa1d-2adf945776bc",
 	'Operator',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("bd0d79e5-8b72-439c-a575-cb80a89b4e3a",
 	"b4d0a598-e97a-4634-83e1-8a6ef06c38af",
@@ -854,6 +856,7 @@ if ( not_empty tracker )
   tracker.payStatus = PayStatus::excess;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("56dc2578-d45a-4a5c-86c8-ee5e3284e192",
@@ -861,6 +864,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TardyExit',
 	'Indicates the exit deadline printed on this ticket has been missed.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("b15a9460-75c6-4faa-a392-8dce9344e6b1",
@@ -877,6 +881,7 @@ if ( not_empty tracker )
   tracker.unpaidExit = true;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("6addbc93-2516-4ff7-973f-4036661c3594",
@@ -884,6 +889,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'UnpaidStayExit',
 	'Indicates that a ticket for an unpaid stay has been inserted into an exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("04644983-1e73-42be-a023-a65e59c6356f",
@@ -895,6 +901,7 @@ INSERT INTO SPR_RS
 	'Indicates that the operator has chosen to waive a fee.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("691fe067-ff91-4b3a-80b4-ac20b1a6f42c",
@@ -902,6 +909,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'FeeWaived',
 	'Indicates that the operator has chosen to waive a fee.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("75b0df71-52c0-4a70-9dc2-bac27605e6b2",
@@ -913,6 +921,7 @@ INSERT INTO SPR_RS
 	'Indicates that the operator has collected a fee.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("deabe881-00f0-46a6-8238-f0f211af4084",
@@ -920,6 +929,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'FeeCollected',
 	'Indicates that the operator has collected a fee.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("9030b81f-3015-4b1d-9b1f-6217ddce858d",
@@ -938,6 +948,7 @@ if ( prefs.EntryActivation == True )  // Checking Entry stand data.
   activ.ticketEntry = param.Ticket;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("decb291b-9729-42dc-9e3c-39bf58a3f0fe",
@@ -945,6 +956,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ActivateEntryStand',
 	'Activates the section of the operator console display for a particular entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("3ee2ab3c-3f90-41ae-9eeb-43a1f994e19c",
@@ -961,6 +973,7 @@ if ( prefs.EntryActivation == True )  // Checking Entry stand data.
   activ.active = False;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e498b425-5222-4bf7-beb4-dbf2b2ed21ef",
@@ -968,6 +981,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DeactivateEntryStand',
 	'Deactivates the section of the operator console display for a particular entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("fafcf6ae-8621-453e-b70d-29e3179bec96",
@@ -986,6 +1000,7 @@ if ( not_empty tracker )
   tracker.delayedEntry = true;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ceb70e8e-da44-4868-9afd-06ee51840aaf",
@@ -995,6 +1010,7 @@ INSERT INTO C_EP_PROXY
 	'Indicates that a vehicle has failed to enter the carpark
 within the expected time after collecting a ticket from
 an entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("8e4d2896-2cb8-4bbf-bc8b-a9aecefa99fe",
@@ -1013,6 +1029,7 @@ if ( prefs.ExitActivation == True )  // Checking Exit stand data.
   activ.ticketExit = param.Ticket;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("a19289e3-ea62-417f-9a6d-5f05d709b9b8",
@@ -1020,6 +1037,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ActivateExitStand',
 	'Activates the section of the operator console display for a particular exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("8f5cce9e-ad81-456b-9d9c-43da460ffacd",
@@ -1036,6 +1054,7 @@ if ( prefs.ExitActivation == True )  // Checking Exit stand data.
   activ.active = False;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("2c1be27d-0494-409e-bee1-e788809c8dc5",
@@ -1043,6 +1062,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DeactivateExitStand',
 	'Deactivates the section of the operator console display for a particular exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("c9bec875-0c09-4938-bc20-08fb9b405cda",
@@ -1063,6 +1083,7 @@ if ( prefs.Occupancy == True )  // Checking Occupancy data.
   send TESTSEQ::Assess( key:"Occupancy" );
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("fb9ecbd5-8059-4308-9f0a-83969561ff04",
@@ -1070,6 +1091,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'OccupancyUpdate',
 	'Provides current carpark occupancy data.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("9496f5a3-5606-4fea-bb3e-f7a381ff9e67",
@@ -1087,6 +1109,7 @@ to the operator who would then command the entry stand, indirectly via the carpa
 system, to issue a ticket. ',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("bb331470-fbd3-43d9-8d59-e5684346c197",
@@ -1100,6 +1123,7 @@ the ticket-request facility would make it impossible for the driver to request
 a ticket.  The driver could then use the intercom system to explain the issue
 to the operator who would then command the entry stand, indirectly via the carpark
 system, to issue a ticket. ',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("e4a6cfeb-e903-410d-9e77-e397fde5a3da",
@@ -1116,6 +1140,7 @@ ticket printer or the sensor detecting the collection of a ticket)
 or in unusual circumstances such as the arrival of a VIP.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("dc4b88ab-d520-4c50-ae78-e56474653079",
@@ -1128,6 +1153,7 @@ The operator may command an entry stand to open the barrier when
 there is a malfunction at the entry stand (e.g., a failure of the
 ticket printer or the sensor detecting the collection of a ticket)
 or in unusual circumstances such as the arrival of a VIP.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("638a0cdd-5bfa-4160-8b99-0deb0deef4c0",
@@ -1139,6 +1165,7 @@ INSERT INTO SPR_RS
 	'Commands the carpark system to open the carpark.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("78dddf09-cf4f-4260-95da-dabf54002032",
@@ -1146,6 +1173,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'OpenCarpark',
 	'Commands the carpark system to open the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("7f7dfd58-b6bb-4a31-811e-ca468e0153f2",
@@ -1158,6 +1186,7 @@ INSERT INTO SPR_RS
 to accept vehicles.',
 	'send TESTSEQ::RunTestSuite();',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("314e787f-c1c2-425c-b684-c14acf073e80",
@@ -1166,6 +1195,7 @@ INSERT INTO C_EP_PROXY
 	'CarparkOpened',
 	'Indicates that the carpark has completed initialization and is open and ready
 to accept vehicles.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("ffd2fac9-5c22-413b-a381-3ac6f7ff0c07",
@@ -1177,6 +1207,7 @@ INSERT INTO SPR_RS
 	'Commands the carpark system to close the carpark.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("685996cf-e141-4a25-8095-b11c6e30fd38",
@@ -1184,6 +1215,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CloseCarpark',
 	'Commands the carpark system to close the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("58b3d2c7-9eae-46e2-b928-f6e0a89b19b3",
@@ -1196,6 +1228,7 @@ INSERT INTO SPR_RS
 to or exit from the carpark.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("643234c5-7a94-4834-81d1-69d996c5a76d",
@@ -1204,6 +1237,7 @@ INSERT INTO C_EP_PROXY
 	'CarparkClosed',
 	'Indicates that the carpark has closed and is no longer permitting entry
 to or exit from the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("c71c6e61-6ac1-48d6-9793-085a04b9f53d",
@@ -1218,6 +1252,7 @@ such as an equipment failure (e.g., failed vehicle waiting sensor or ticket read
 or in case of emergency.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("06d1a1ae-4cf0-4736-9880-66e81f19f2dd",
@@ -1228,6 +1263,7 @@ INSERT INTO C_EP_PROXY
 An operator may command an exit stand to open the barrier in unusual circumstances 
 such as an equipment failure (e.g., failed vehicle waiting sensor or ticket reader) 
 or in case of emergency.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("f2ae5a35-9663-4b23-a863-1c0d0647029c",
@@ -1239,6 +1275,7 @@ INSERT INTO SPR_RS
 	'Provides the current date and time according to the carpark system.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e5c28b7b-3074-4ec3-933c-109cc9064aac",
@@ -1246,6 +1283,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DateTimeUpdate',
 	'Provides the current date and time according to the carpark system.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("4961ae10-1455-43a1-8bcc-96157655b63b",
@@ -1258,6 +1296,7 @@ INSERT INTO SPR_RS
 This allows communication between the console and the peripheral instance via carpark control.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("25b5186b-bc28-4f4d-bdd6-81028ae8abfc",
@@ -1266,6 +1305,7 @@ INSERT INTO C_EP_PROXY
 	'Register',
 	'Register existence of an instance of a peripheral of the specified type at the specified location.
 This allows communication between the console and the peripheral instance via carpark control.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/OperatorConsole/OperatorConsole.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("b4d0a598-e97a-4634-83e1-8a6ef06c38af",
@@ -1278,7 +1318,8 @@ INSERT INTO C_PO
 	"267abe01-5adc-42d6-aa1d-2adf945776bc",
 	'EntryStand',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("a40ddd81-ad50-41f6-a8a7-8cf0c07f48b6",
 	"a4174036-5fb5-4ca8-bc14-f60c13721964",
@@ -1300,6 +1341,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has arrived and is waiting at the entry stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("9c8c4e52-3d03-4fd0-90c1-fd98b94dbf3a",
@@ -1307,6 +1349,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleWaiting',
 	'Indicates a vehicle has arrived and is waiting at the entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("68a9b49d-a78f-4214-9ca7-eeea9912de1d",
@@ -1318,6 +1361,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has entered the carpark.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("aaab7b5e-4f98-4998-8be4-4d26b7279bdc",
@@ -1325,6 +1369,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleEntered',
 	'Indicates a vehicle has entered the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("39e7c899-6cf1-4679-a340-42979b02f7c2",
@@ -1347,6 +1392,7 @@ tracker.payStatus = PayStatus::unpaid;
 tracker.changeStatus = ChangeStatus::ignore;
 send TESTSEQ::Assess( key:"TicketIssued" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("a9135539-d52d-430b-9204-de30fd3917e4",
@@ -1354,6 +1400,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'IssueTicket',
 	'Commands the entry stand to issue a ticket.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("e38f3002-8f98-4e74-954d-cf15752cfafe",
@@ -1369,6 +1416,7 @@ bcmd.stand = "Entry";
 bcmd.state = BarrierState::Open;
 send TESTSEQ::Assess( key:"BarrierCommand" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("8f0421c7-8766-43ee-9926-ff840933d845",
@@ -1376,6 +1424,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'OpenBarrier',
 	'Commands the entry stand to open the barrier, permitting vehicles to enter the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("60a35953-f20c-4a3b-a934-675c0718d3be",
@@ -1387,6 +1436,7 @@ INSERT INTO SPR_RS
 	'Indicates a ticket has been collected from the entry stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("65f8b110-e37a-4554-bb1b-f32011e90160",
@@ -1394,6 +1444,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketCollected',
 	'Indicates a ticket has been collected from the entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("95579a9d-6359-483d-a0ba-394df904bec1",
@@ -1405,6 +1456,7 @@ INSERT INTO SPR_RS
 	'Indicates a ticket has been requested by the driver waiting at the entry stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b6122e79-e6b1-4317-9660-8f2915f6aa3d",
@@ -1412,6 +1464,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketRequested',
 	'Indicates a ticket has been requested by the driver waiting at the entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("5f46f10f-5d5b-451d-86e2-7700441adb49",
@@ -1427,6 +1480,7 @@ req.location = param.Location;
 req.enabled = True;
 send TESTSEQ::Assess( key:"TicketRequest" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("7505d600-9541-4f9d-a706-1332ed813b40",
@@ -1434,6 +1488,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketRequestEnabled',
 	'Enables ticket requests at the entry stand.  ',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("6a07ad77-617c-40f0-8afc-8240176b531e",
@@ -1450,6 +1505,7 @@ req.enabled = False;
 send TESTSEQ::Assess( key:"TicketRequest" );
 ',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("198f2473-7dbc-4032-af90-880de6c271ff",
@@ -1457,6 +1513,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketRequestDisabled',
 	'Disables ticket requests at the entry stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("3762c62d-087e-4204-9b96-1616f25f1f04",
@@ -1472,6 +1529,7 @@ bcmd.stand = "Entry";
 bcmd.state = BarrierState::Closed;
 send TESTSEQ::Assess( key:"BarrierCommand" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("7c4b090e-4c89-4572-bcaa-379127d653fd",
@@ -1479,6 +1537,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CloseBarrier',
 	'Commands the entry stand to close the barrier, preventing vehicles from entering the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("32128690-8993-4e47-8892-4c5455277b30",
@@ -1490,6 +1549,7 @@ INSERT INTO SPR_RS
 	'Announce the creation of a new instance at the specified location.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("66899918-c568-4d94-b0a3-87d21a637061",
@@ -1497,6 +1557,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'Register',
 	'Announce the creation of a new instance at the specified location.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/EntryStand/EntryStand.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("a4174036-5fb5-4ca8-bc14-f60c13721964",
@@ -1509,7 +1570,8 @@ INSERT INTO C_PO
 	"267abe01-5adc-42d6-aa1d-2adf945776bc",
 	'ExitStand',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("9ed87ac1-d91a-4819-bef5-4fe15fae6ea7",
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
@@ -1531,6 +1593,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has arrived and is waiting at the exit stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b3f31032-49a3-4845-9e8a-03103f750cdc",
@@ -1538,6 +1601,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleWaiting',
 	'Indicates a vehicle has arrived and is waiting at the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("f76c133d-6973-4345-a171-2e03cd00d57c",
@@ -1549,6 +1613,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has exited the carpark through the exit stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ed36bd77-6fda-48f3-a9fb-7e00759b1b57",
@@ -1556,6 +1621,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleExited',
 	'Indicates a vehicle has exited the carpark through the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("a4f9f287-62e3-4712-af22-7352bc789027",
@@ -1571,6 +1637,7 @@ bcmd.stand = "Exit";
 bcmd.state = BarrierState::Open;
 send TESTSEQ::Assess( key:"BarrierCommand" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("94176f94-59e4-424f-93c7-c63bd6df3325",
@@ -1578,6 +1645,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'OpenBarrier',
 	'Commands the exit stand to open the barrier, permitting vehicles to exit the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("c6dc9263-f895-4679-956c-80c33a18ebe2",
@@ -1589,6 +1657,7 @@ INSERT INTO SPR_RS
 	'Indicates a ticket has been inserted into the exit stand.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("edaae9b0-1293-42d5-9588-eebd4c4e58e9",
@@ -1596,6 +1665,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedTicket',
 	'Indicates a ticket has been inserted into the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("52b7a6a0-4afc-4f83-88ec-2941b92d3e67",
@@ -1611,6 +1681,7 @@ bcmd.stand = "Exit";
 bcmd.state = BarrierState::Closed;
 send TESTSEQ::Assess( key:"BarrierCommand" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("1156e097-b935-4375-835b-405ad15cc03d",
@@ -1618,6 +1689,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CloseBarrier',
 	'Commands the exit stand to close the barrier, preventing vehicles from exiting the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("c53292bd-e977-48da-b6cb-385f1c36061e",
@@ -1629,6 +1701,7 @@ INSERT INTO SPR_RS
 	'Announce the creation of a new instance at the specified location.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("771c37e5-26b2-4cd4-bcfa-01ccfb15a164",
@@ -1636,6 +1709,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'Register',
 	'Announce the creation of a new instance at the specified location.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("7899d3af-2715-4b8f-a3b5-f0508005328d",
@@ -1648,7 +1722,8 @@ INSERT INTO C_PO
 	"267abe01-5adc-42d6-aa1d-2adf945776bc",
 	'Payer',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("afa5e31a-c993-427d-b907-5786d5800b5f",
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
@@ -1670,6 +1745,7 @@ INSERT INTO SPR_RS
 	'Indicates the patron cancelled the current transaction.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("aeb8e261-7eb2-4971-a3cb-e35a714490b3",
@@ -1677,6 +1753,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CancelledTransaction',
 	'Indicates the patron cancelled the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("6fdd2e44-e91b-45ca-b7a8-9e1563f88d78",
@@ -1689,6 +1766,7 @@ INSERT INTO SPR_RS
 containing insufficient change to settle the current transaction.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("f66a3b7f-d47f-4c2b-9f66-1ce143dc9e4d",
@@ -1697,6 +1775,7 @@ INSERT INTO C_EP_PROXY
 	'WaivedChange',
 	'Indicates the patron waived any change due at a payment machine
 containing insufficient change to settle the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("64d55d95-1fd0-445f-bef9-4a540c3a0312",
@@ -1709,6 +1788,7 @@ INSERT INTO SPR_RS
 	'LOG::LogInfo( message:"PaymentMachine received ticket collected." );
 ',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("1a93d819-e152-409f-8b77-23b28cb652bb",
@@ -1716,6 +1796,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketCollected',
 	'Indicates the patron collected a ticket returned by the payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("b9b189c9-3fb4-47a9-8008-c8533e8d0dfa",
@@ -1727,6 +1808,7 @@ INSERT INTO SPR_RS
 	'Indicates that a patron inserted a ticket into a payment machine.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("6bdbefd7-2814-447f-a902-ed56cfceddfb",
@@ -1734,6 +1816,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedTicket',
 	'Indicates that a patron inserted a ticket into a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("84d6fd7e-d94b-48c8-abf6-509c6b7b53fa",
@@ -1745,6 +1828,7 @@ INSERT INTO SPR_RS
 	'Indicates that a patron inserted currency into a payment machine.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ed039022-908c-4f0a-bb12-81c944031952",
@@ -1752,6 +1836,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedCurrency',
 	'Indicates that a patron inserted currency into a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("2e95b17f-8525-4948-b7ad-d103a380513e",
@@ -1768,6 +1853,7 @@ select any tracker from instances of VisitTracking
 tracker.amountDue = param.Amount;
 send TESTSEQ::Assess( key:"Balance"+param.Location );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e6bd25b1-8a4d-4a8a-a068-e149f8b48ebb",
@@ -1776,6 +1862,7 @@ INSERT INTO C_EP_PROXY
 	'RemainingBalance',
 	'Provides the remaining balance for the stay associated with the ticket
 currently inserted in a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("893c3b33-ab41-4839-a4c6-f9581dd37919",
@@ -1802,6 +1889,7 @@ if ( tracker.amountDue < 0.0 )
   end if;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("acfc0128-4d4f-4a0e-87ed-988ebe170166",
@@ -1810,6 +1898,7 @@ INSERT INTO C_EP_PROXY
 	'InsufficientChange',
 	'Indicates that this payment machine contain insufficient change to settle
 the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("733ddba3-af68-41ff-b2d5-1e352f1243d5",
@@ -1827,6 +1916,7 @@ if ( not_empty tracker )
 end if;
 send TESTSEQ::Assess( key:"TicketReturned" );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ab99ffd4-de35-47a9-9eb4-ee31927071ec",
@@ -1834,6 +1924,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ReturnedTicket',
 	'Commands a payment machine to return the currently-inserted ticket to the patron.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("c62cb3e0-4035-4c41-a5bf-29b63d2b69e6",
@@ -1852,6 +1943,7 @@ if ( not_empty tracker )
   tracker.deadline = TIM::current_seconds() + 15 * 60;	// see CP29 in CarPark SRS
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("7d98badf-0872-49ac-a66e-72a2d0d07fa7",
@@ -1860,6 +1952,7 @@ INSERT INTO C_EP_PROXY
 	'ExitDeadline',
 	'Provides the exit deadline (date/time) from the carpark system to a payment machine, 
 so the latter can print it on the ticket before returning the ticket to the patron.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("4ffe69c6-eff9-4bf8-8240-31ff7622bf60",
@@ -1879,6 +1972,7 @@ if ( param.Amount > 0.0 )
   tracker.changeStatus = ChangeStatus::dispensed; // Note this for visit check
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("f6708800-f5f1-4db3-bf94-550b4dd6e170",
@@ -1887,6 +1981,7 @@ INSERT INTO C_EP_PROXY
 	'DispenseChange',
 	'Commands a payment machine to dispense change to settle the current transaction.
 Note: Also used to dispense refund of any payment when a transaction is cancelled.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("ac2494ef-8171-4c20-9e47-ac0d13ce2691",
@@ -1914,6 +2009,7 @@ if ( not_empty tracker )
     LOG::LogInfo( message:"Unable to cancel transaction at " + param.Location );  end if;
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e25325e0-cebe-4e34-8814-1a1f84c7e4a4",
@@ -1921,6 +2017,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TransactionCancelled',
 	'Indicates that the current transaction was cancelled by the carpark system.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("eefb6b99-56ff-4e94-a847-667f68c172ab",
@@ -1932,6 +2029,7 @@ INSERT INTO SPR_RS
 	'Announce the creation of a new instance at the specified location.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("564726c1-9ef0-4f1f-b299-5d272941b451",
@@ -1939,6 +2037,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'Register',
 	'Announce the creation of a new instance at the specified location.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("1775761d-746e-41ae-a5e0-cd1a783dc665",
@@ -1951,7 +2050,8 @@ INSERT INTO C_PO
 	"267abe01-5adc-42d6-aa1d-2adf945776bc",
 	'TESTSEQ',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("90ea7117-8b0f-4f98-a679-70202e1c75cf",
 	"eff7aa83-70b9-46a6-bfc0-08d66d36431e",
@@ -1976,6 +2076,7 @@ INSERT INTO SPR_RS
 stim.Inject();
 ',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("abb1f40e-d7c8-4654-94f5-c0a999c3866a",
@@ -1983,6 +2084,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InjectStimulus',
 	'Invoke injection of the identified stimulus in the test bench.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("112e51de-abd4-40df-b821-099ad1930cf9",
@@ -1996,6 +2098,7 @@ INSERT INTO SPR_RS
   where ( selected.observationId == param.observationId );
 obs.Observe();',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ed6e0575-1418-4e51-82ef-2f3bf15fbb57",
@@ -2003,6 +2106,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InvokeObservation',
 	'Invoke evaluation of the identified observation in the test bench.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("4112aa2d-a2ac-4555-83de-8fc2732ca473",
@@ -2014,6 +2118,7 @@ INSERT INTO SPR_RS
 	'Report to the Test sequencer service that an observation has completed.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("5df7def7-0028-4dc9-8578-87518097d737",
@@ -2021,6 +2126,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ObservationDone',
 	'Report to the Test sequencer service that an observation has completed.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("e3a406b0-d41c-4f70-9f7b-a3a1914d1f65",
@@ -2044,6 +2150,7 @@ if ( param.caseLabel == "UC11" )
 end if;
 send TESTSEQ::TestCaseInitialized( caseLabel:param.caseLabel );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b5ee9925-8760-47c6-a3ea-734b7d165169",
@@ -2052,6 +2159,7 @@ INSERT INTO C_EP_PROXY
 	'InitializeTestCase',
 	'Testbench receives notification that a new test case has been selected to run.
 Initialize any pre-conditions and respond when ready for stimulus injection.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("78f6c805-780e-4e33-aced-23e6e479659b",
@@ -2063,6 +2171,7 @@ INSERT INTO SPR_RS
 	'Respond with this signal when all observations for an executed stimulus are complete.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ef029a3f-8bbc-4d01-b248-9d10545d4527",
@@ -2070,6 +2179,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'StimulusDone',
 	'Respond with this signal when all observations for an executed stimulus are complete.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("4043fd62-adca-435b-a27d-1180a35b104e",
@@ -2083,6 +2193,7 @@ This will initiate stimiuli injection, and thus observation reporting, for a tes
 If the test case has more than one test sequence, these will start in parallel.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("976b6c82-6628-4a51-b78f-8a11577ec800",
@@ -2092,6 +2203,7 @@ INSERT INTO C_EP_PROXY
 	'Report back to the Test sequencer service that a testbench test case has completed initialization.
 This will initiate stimiuli injection, and thus observation reporting, for a test case.
 If the test case has more than one test sequence, these will start in parallel.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("00425438-5827-4417-9510-ef6bf710b356",
@@ -2103,6 +2215,7 @@ INSERT INTO SPR_RS
 	'On this signal, any active observations with matching key value will be triggered to re-evaluate.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b5a796ca-6082-48ac-92dd-efc0a0922ce7",
@@ -2110,6 +2223,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'Assess',
 	'On this signal, any active observations with matching key value will be triggered to re-evaluate.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("600111ab-1390-40fb-9bd3-a061082e4420",
@@ -2122,6 +2236,7 @@ INSERT INTO SPR_RS
 This is used for test coverage reporting.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("c7c36dbc-1771-40f5-9e73-c713d789f49a",
@@ -2130,6 +2245,7 @@ INSERT INTO C_EP_PROXY
 	'LinkRequirement',
 	'Indicate that the given requirement is (partially) tested by the given test case.
 This is used for test coverage reporting.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("30496620-6255-443e-b418-d9a8e4bfc71f",
@@ -2141,6 +2257,7 @@ INSERT INTO SPR_RS
 	'Run the sequence of test buckets associated with the singleton test suite.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("acaa32df-c46b-4fb9-8a4d-e3da8ab0716a",
@@ -2148,6 +2265,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'RunTestSuite',
 	'Run the sequence of test buckets associated with the singleton test suite.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("a6a0b31c-3bf7-46e4-83c3-f3a1c219f2c9",
@@ -2159,6 +2277,7 @@ INSERT INTO SPR_RS
 	'Create an instance of a requirement which may be linked to test cases for coverage reporting.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("2410fcc8-0433-44ba-8e92-f529a7ae4e7d",
@@ -2166,6 +2285,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'MakeRequirement',
 	'Create an instance of a requirement which may be linked to test cases for coverage reporting.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("b151b77c-f65a-4aef-98fd-e6ea9259d7ec",
@@ -2178,6 +2298,7 @@ INSERT INTO SPR_RS
 ',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b7c0a071-0d7d-4ad9-9d92-4170a9db8b0d",
@@ -2186,6 +2307,7 @@ INSERT INTO C_EP_PROXY
 	'BucketInitialized',
 	'Indicate to the test sequencer that the current test bucket is ready to run test cases.
 ',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("4cc8fa66-f8a1-4a2a-b160-8ed806a61df8",
@@ -2204,6 +2326,7 @@ select any bucket from instances of TestBucket
 LOG::LogInfo( message:"Configuring test cases for test bucket " + bucket.name );
 bucket.AddTestCases();',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("14882a87-5828-4191-a273-30b8788f3566",
@@ -2211,6 +2334,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InitializeBucket',
 	'Signals a test bucket to instantiate its test case sequences.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("1ee78726-4534-4012-b1bc-21b2bd2e9aba",
@@ -2223,6 +2347,7 @@ INSERT INTO SPR_RS
 For observations, consider using the polling capability which can repeatedly evaluate with delays.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("581dc69f-0c98-4ab6-baf0-a03c367e212f",
@@ -2231,6 +2356,7 @@ INSERT INTO C_EP_PROXY
 	'InsertDelay',
 	'Request the test sequencer to include a timed delay before invoking the next stimulus or observation.
 For observations, consider using the polling capability which can repeatedly evaluate with delays.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("ef402a7d-a6c1-4230-881c-ef5aa8d2a443",
@@ -2242,6 +2368,7 @@ INSERT INTO SPR_RS
 	'A stimulus may request start of the interval timer linked to its test sequence.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("bb4f4c38-32d2-41f1-a540-93e7d083ed70",
@@ -2249,6 +2376,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'StartIntervalTimer',
 	'A stimulus may request start of the interval timer linked to its test sequence.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("90f9ea74-8479-448f-8e6d-e5990e8c3ec4",
@@ -2264,6 +2392,7 @@ if ( not_empty stimulus )
   stimulus.Delete();
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("d5a4cf86-3f41-407c-831c-18e679999a67",
@@ -2271,6 +2400,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DeleteStimulus',
 	'Signals the testbench that the identified stimulus sub/supertype can be disposed of.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("cf649e9c-fad9-4dde-8425-b7516843a14e",
@@ -2286,6 +2416,7 @@ if ( not_empty bucket )
   bucket.Delete();
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e3261067-756f-427b-94ca-307412068ce6",
@@ -2293,6 +2424,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DeleteTestBucket',
 	'Signals the testbench that the identified test bucket sub/supertype can be disposed of.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("46267498-2c0a-45c1-af0d-2765da09b50b",
@@ -2304,6 +2436,7 @@ INSERT INTO SPR_RS
 	'A single instance of test suite must be created, to which will be added test bucket(s) containing test case(s).',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b1465433-efc9-45bd-ad88-e5ead4500931",
@@ -2311,6 +2444,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'RegisterTestSuite',
 	'A single instance of test suite must be created, to which will be added test bucket(s) containing test case(s).',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("9ed0e418-1457-4e21-a7fc-a6bfc4be7086",
@@ -2326,6 +2460,7 @@ if ( not_empty observation )
   observation.Delete();
 end if;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("a65ba45b-40f5-486e-9280-968e92d5d402",
@@ -2333,6 +2468,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'DeleteObservation',
 	'Signals the testbench that the identified observation sub/supertype can be disposed of.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("966caf7e-fbdf-4666-a00a-68a3878fca06",
@@ -2344,6 +2480,7 @@ INSERT INTO SPR_RS
 	'Signals completion of the test suite.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("2ab9bd8f-a044-44bc-b988-74be588a3af7",
@@ -2351,6 +2488,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TestSuiteComplete',
 	'Signals completion of the test suite.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("0da235f4-87c2-4e67-925b-616ba24e5831",
@@ -2362,6 +2500,7 @@ INSERT INTO SPR_RS
 	'Add an instance of a test bucket to the test suite.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("3ab9f7fe-b572-4c34-98f5-076122029206",
@@ -2369,6 +2508,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'AddBucket',
 	'Add an instance of a test bucket to the test suite.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("5eeb22b7-834e-472f-953f-f93e9b721a42",
@@ -2380,6 +2520,7 @@ INSERT INTO SPR_RS
 	'Add an instance of a test case, identified by label, to the indicated test bucket.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("338f43fc-f8fd-4707-98a1-be43d1ec3394",
@@ -2387,6 +2528,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'AddTestCase',
 	'Add an instance of a test case, identified by label, to the indicated test bucket.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("6fea8dff-cac1-4721-a366-672946507b16",
@@ -2398,6 +2540,7 @@ INSERT INTO SPR_RS
 	'',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ccdf5756-d7fc-4bb0-9a09-adbbe404ef3d",
@@ -2405,6 +2548,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'AddStimulus',
 	'',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("281d378f-49f6-4d49-a3e9-0e385ed7a8dd",
@@ -2418,6 +2562,7 @@ The value will be signalled back to the testbench, along with the supplied ident
 Optionally, the timer can be reset.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("80b50e27-14fc-4cf7-9830-ef2a7c77d6fa",
@@ -2427,6 +2572,7 @@ INSERT INTO C_EP_PROXY
 	'An observation may request the value of the interval timer associated with its stimulus sequence.
 The value will be signalled back to the testbench, along with the supplied identification key.
 Optionally, the timer can be reset.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("a3973e07-348a-48f3-b3f3-66ab20849f0e",
@@ -2438,6 +2584,7 @@ INSERT INTO SPR_RS
 	'Respond to a request to read the interval timer on a sequence. The key supplied by the request is echoed back.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("7c394270-a8ad-44af-a4ad-8601e7eebc96",
@@ -2445,6 +2592,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'IntervalTimerValue',
 	'Respond to a request to read the interval timer on a sequence. The key supplied by the request is echoed back.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("738924ac-d1a8-4152-a0b7-05f980cf4ef6",
@@ -2458,6 +2606,7 @@ A labelled sequence will be added to the test case currently being constructed.
 These sequences may run in parallel and may interact via assess signals.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("d69685a1-d173-411e-954d-82338177cf09",
@@ -2467,6 +2616,7 @@ INSERT INTO C_EP_PROXY
 	'A test case can have one or more labeled sequences of stimuli.
 A labelled sequence will be added to the test case currently being constructed.
 These sequences may run in parallel and may interact via assess signals.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("322abf3f-cccd-43fe-aaa7-e0979390316c",
@@ -2479,6 +2629,7 @@ INSERT INTO SPR_RS
 This has the effect of completing the observation without a failure penalty.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ca057380-3763-49be-a902-4f89bd14277c",
@@ -2487,6 +2638,7 @@ INSERT INTO C_EP_PROXY
 	'CancelObservation',
 	'On this signal, an active observation will be cancelled.
 This has the effect of completing the observation without a failure penalty.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("6ee925c3-4eb8-451a-968c-cbe3c6680718",
@@ -2498,6 +2650,7 @@ INSERT INTO SPR_RS
 	'Test buckets inherit default resolutions from the test suite; these can be overridden.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("de9c9d7b-2d7a-4144-923a-4f0477575d03",
@@ -2505,6 +2658,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetTestBucketTimeResolutions',
 	'Test buckets inherit default resolutions from the test suite; these can be overridden.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("08243830-532e-4cae-a668-dddc1a563b2c",
@@ -2516,6 +2670,7 @@ INSERT INTO SPR_RS
 	'Test sequences inherit default resolutions from the test case they are attatched to; these can be overridden.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("092a77de-9124-470e-9e04-e55568aebdc9",
@@ -2523,6 +2678,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetSequenceTimeResolutions',
 	'Test sequences inherit default resolutions from the test case they are attatched to; these can be overridden.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("d1e773aa-2f28-4beb-98c5-2f4c25666782",
@@ -2534,6 +2690,7 @@ INSERT INTO SPR_RS
 	'Set the timer resolutions which will be defaults for the test buckets in this test suite.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("168e2aad-1615-4146-ac35-e977e2dbf6c5",
@@ -2541,6 +2698,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetTestSuiteTimeResolutions',
 	'Set the timer resolutions which will be defaults for the test buckets in this test suite.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("24b280bc-6e76-4f23-8a7e-d0ff72653616",
@@ -2552,6 +2710,7 @@ INSERT INTO SPR_RS
 	'Test cases inherit default resolutions from their test bucket; these can be overridden.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("80147fc1-3758-4e4b-b996-66d26cfeffd2",
@@ -2559,6 +2718,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetTestCaseTimeResolutions',
 	'Test cases inherit default resolutions from their test bucket; these can be overridden.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("9f243831-32e4-4375-81bc-60ff592f6a65",
@@ -2570,6 +2730,7 @@ INSERT INTO SPR_RS
 	'Set a time resolution specific to interval timing measurements on the sequence.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("abe4b64e-9b6b-4aa3-a59c-1c6df05a312a",
@@ -2577,6 +2738,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetSequenceIntervalTimerResolution',
 	'Set a time resolution specific to interval timing measurements on the sequence.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("34ac1fd4-e847-4bfa-80c7-59fb6db2e233",
@@ -2588,6 +2750,7 @@ INSERT INTO SPR_RS
 	'Observations inherit default resolutions from the sequence they are added to; these can be overridden.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("33169678-f345-469d-ac15-ea1c7322c7a9",
@@ -2595,6 +2758,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'SetObservationTimeResolutions',
 	'Observations inherit default resolutions from the sequence they are added to; these can be overridden.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("acdb853b-055f-4d49-b234-3cedd6e22356",
@@ -2627,6 +2791,7 @@ for each actv in actvs
   delete object instance actv;
 end for;',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("2e275a42-594f-477a-86c9-6a263a8b1e41",
@@ -2634,6 +2799,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TestCaseComplete',
 	'Signal completion of a test case.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("0e9025a1-4b29-4169-b0ef-e6896a54e70e",
@@ -2645,6 +2811,7 @@ INSERT INTO SPR_RS
 	'Allow this obbservation to be invoked again, attempting completion.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("5c356dfd-5197-46e8-8f38-d8d4f740788a",
@@ -2652,6 +2819,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ObservationIncomplete',
 	'Allow this obbservation to be invoked again, attempting completion.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("e1d53445-bf71-49b1-a5f5-c02efe427f12",
@@ -2663,6 +2831,7 @@ INSERT INTO SPR_RS
 	'Add an observation which will evaluate as soon as it becomes eligible following a stimulus.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("082333f2-efc5-427f-b3e7-f2c296eb4bed",
@@ -2670,6 +2839,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'AddImmediateObservation',
 	'Add an observation which will evaluate as soon as it becomes eligible following a stimulus.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("eea925c5-81e1-4ed2-8637-64b82de01703",
@@ -2681,6 +2851,7 @@ INSERT INTO SPR_RS
 	'Add an observation which will only evaluate in response to signalled trigger occurrence.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("09c40bff-dfaf-4ccb-be7c-87e520743fcf",
@@ -2688,6 +2859,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'AddTriggeredObservation',
 	'Add an observation which will only evaluate in response to signalled trigger occurrence.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("933e8d06-9c70-4fc5-b7d0-4411222ebd4a",
@@ -2699,6 +2871,7 @@ INSERT INTO SPR_RS
 	'Change an existing triggered observation to a polling immediate observation.',
 	'',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("18966c4a-2804-4b67-8933-5275d471cb7c",
@@ -2706,6 +2879,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'MigrateTriggeredObservation',
 	'Change an existing triggered observation to a polling immediate observation.',
+	0,
 	'../../../../../TestFramework/models/TestFramework/Interfaces/TestSequencing/TestSequencing.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("eff7aa83-70b9-46a6-bfc0-08d66d36431e",

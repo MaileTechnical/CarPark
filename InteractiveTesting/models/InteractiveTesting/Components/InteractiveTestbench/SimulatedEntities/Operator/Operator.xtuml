@@ -27,6 +27,7 @@ operator.OccupancyDecreased = 0;
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("dde4f78f-9ab0-448f-8013-f6914a857bbe",

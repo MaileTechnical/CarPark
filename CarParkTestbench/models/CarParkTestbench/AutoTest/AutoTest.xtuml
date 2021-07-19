@@ -1235,6 +1235,7 @@ INSERT INTO C_PO_PROXY
 	'TESTBENCH',
 	0,
 	0,
+	'',
 	'../../../../TestFramework/models/TestFramework/Components/TestSequencer/TestSequencer.xtuml');
 INSERT INTO PE_PE
 	VALUES ("e99b9dfd-28dc-471b-875c-0fb534412da1",
@@ -1384,6 +1385,7 @@ resolution defaults to that of the sequence time resolution, but can be overridd
 	"00000000-0000-0000-0000-000000000000",
 	0,
 	'',
+	'',
 	'../../../../TestFramework/models/TestFramework/Components/TestSequencer/TestSequencer.xtuml');
 INSERT INTO CL_IC
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1423,6 +1425,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1453,6 +1456,7 @@ INSERT INTO C_PO_PROXY
 	'EntryStand',
 	0,
 	0,
+	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1483,6 +1487,7 @@ INSERT INTO C_PO_PROXY
 	'ExitStand',
 	0,
 	0,
+	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1513,6 +1518,7 @@ INSERT INTO C_PO_PROXY
 	'Payer',
 	0,
 	0,
+	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO CL_POR
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1543,6 +1549,7 @@ INSERT INTO C_PO_PROXY
 	'TESTSEQ',
 	0,
 	0,
+	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO PE_PE
 	VALUES ("d2977801-cded-45a9-99f2-62fadf454bcd",
@@ -1559,6 +1566,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../Components/CarParkTestbench/CarParkTestbench.xtuml');
 INSERT INTO CL_IC
@@ -1601,6 +1609,7 @@ INSERT INTO C_PO_PROXY
 	'Operator',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("e479f66c-fa9d-45b1-aa95-7dfe6b171bee",
@@ -1633,6 +1642,7 @@ INSERT INTO C_PO_PROXY
 	'Entry',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("e479f66c-fa9d-45b1-aa95-7dfe6b171bee",
@@ -1665,6 +1675,7 @@ INSERT INTO C_PO_PROXY
 	'Exit',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO CL_POR
 	VALUES ("e479f66c-fa9d-45b1-aa95-7dfe6b171bee",
@@ -1697,6 +1708,7 @@ INSERT INTO C_PO_PROXY
 	'Payer',
 	0,
 	0,
+	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO PE_PE
 	VALUES ("e479f66c-fa9d-45b1-aa95-7dfe6b171bee",
@@ -1719,6 +1731,7 @@ not just those associated with a particular instance of Carpark.',
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../../../../CarPark/models/CarPark/Components/CarparkControl/CarparkControl.xtuml');
 INSERT INTO C_SF

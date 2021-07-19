@@ -20,6 +20,7 @@ send ExitStand::Register( Location:"Lane 1" );',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("4dae8666-c3cc-463f-b19f-f1f4c1c25d49",
@@ -37,6 +38,7 @@ INSERT INTO S_SYNC
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("26ddbc16-2d72-472c-ac6d-115668326344",
@@ -59,6 +61,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../CarParkTestbench.xtuml');
 INSERT INTO S_SYS_PROXY

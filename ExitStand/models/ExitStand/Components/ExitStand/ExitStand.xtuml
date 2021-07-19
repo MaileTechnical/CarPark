@@ -9,6 +9,7 @@ INSERT INTO C_C
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'');
 INSERT INTO GD_MD
 	VALUES ("ee300179-1a0f-43fc-9ac9-d9ee42f72daf",
@@ -299,7 +300,8 @@ INSERT INTO C_PO
 	"05de1619-41b1-467d-858f-929e0131b332",
 	'CarPark',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("bd1fa382-9e93-4e57-aae3-5b35d028e1a5",
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
@@ -321,6 +323,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has arrived and is waiting at the exit stand.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b3f31032-49a3-4845-9e8a-03103f750cdc",
@@ -328,6 +331,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleWaiting',
 	'Indicates a vehicle has arrived and is waiting at the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("fafef920-9235-45bd-be9c-4e20df857040",
@@ -339,6 +343,7 @@ INSERT INTO SPR_RS
 	'Indicates a vehicle has exited the carpark through the exit stand.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ed36bd77-6fda-48f3-a9fb-7e00759b1b57",
@@ -346,6 +351,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'VehicleExited',
 	'Indicates a vehicle has exited the carpark through the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("28872c29-55c6-406b-be14-2a18de0227ac",
@@ -357,6 +363,7 @@ INSERT INTO SPR_RS
 	'Commands the exit stand to open the barrier, permitting vehicles to exit the carpark.',
 	'::OpenBarrier( Location:param.Location );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("94176f94-59e4-424f-93c7-c63bd6df3325",
@@ -364,6 +371,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'OpenBarrier',
 	'Commands the exit stand to open the barrier, permitting vehicles to exit the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("d7a780af-4a5a-485a-b9cd-a382d6ba3cd7",
@@ -375,6 +383,7 @@ INSERT INTO SPR_RS
 	'Indicates a ticket has been inserted into the exit stand.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("edaae9b0-1293-42d5-9588-eebd4c4e58e9",
@@ -382,6 +391,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedTicket',
 	'Indicates a ticket has been inserted into the exit stand.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("b0866bff-0810-4f12-9795-967495ee095c",
@@ -393,6 +403,7 @@ INSERT INTO SPR_RS
 	'Commands the exit stand to close the barrier, preventing vehicles from exiting the carpark.',
 	'::CloseBarrier( Location:param.Location );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("1156e097-b935-4375-835b-405ad15cc03d",
@@ -400,6 +411,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CloseBarrier',
 	'Commands the exit stand to close the barrier, preventing vehicles from exiting the carpark.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("6f4b85ca-09fe-4965-b1a1-deed00e00db9",
@@ -411,6 +423,7 @@ INSERT INTO SPR_RS
 	'Announce the creation of a new instance at the specified location.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("771c37e5-26b2-4cd4-bcfa-01ccfb15a164",
@@ -418,6 +431,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'Register',
 	'Announce the creation of a new instance at the specified location.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/ExitStand/ExitStand.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("7899d3af-2715-4b8f-a3b5-f0508005328d",
@@ -430,7 +444,8 @@ INSERT INTO C_PO
 	"05de1619-41b1-467d-858f-929e0131b332",
 	'Operator',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("3134e0f0-1e20-48b6-a799-5de4502cda60",
 	"65263c05-9f4e-4876-85d0-8be1231ea965",
@@ -448,23 +463,29 @@ INSERT INTO SPR_REP
 	"3134e0f0-1e20-48b6-a799-5de4502cda60");
 INSERT INTO SPR_RS
 	VALUES ("2e288418-eba1-48f9-ac14-48be4412ff49",
-	'CallOperator',
-	'Ask operator for assistance in case of fault at stand.',
+	'HelpRequest',
+	'Ask operator for assistance in case of a fault at an entry or exit stand.
+This signal is not implemented; currently there is no support for client-to-client communication.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
 	"65263c05-9f4e-4876-85d0-8be1231ea965",
 	-1,
-	'CallOperator',
-	'Ask operator for assistance in case of fault at stand.',
+	'HelpRequest',
+	'Ask operator for assistance in case of a fault at an entry or exit stand.
+This signal is not implemented; currently there is no support for client-to-client communication.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/Intercom/Intercom.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("65263c05-9f4e-4876-85d0-8be1231ea965",
 	"00000000-0000-0000-0000-000000000000",
 	'Intercom',
-	'',
+	'This interface is not actually implemented, but represents, conceptually, what is desired.
+The present implementation uses socket communication only for the application interfaces.
+A help request bypasses the application and directly invokes messaging to the operator.',
 	'../../../../../CarPark/models/CarPark/Interfaces/Intercom/Intercom.xtuml');
 INSERT INTO PE_PE
 	VALUES ("05de1619-41b1-467d-858f-929e0131b332",

@@ -25,6 +25,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("15a0cfd7-25d3-4255-bd8f-7e24496c123a",
@@ -55,6 +56,7 @@ delete object instance self;',
 	1,
 	'',
 	"9e2f82f6-ca33-4973-83c1-c3ddcc3c78a2",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("730ee9f9-3ba1-4bd2-9f66-8580d3c7f16e",
@@ -67,6 +69,7 @@ INSERT INTO O_TFR
 	1,
 	'',
 	"15a0cfd7-25d3-4255-bd8f-7e24496c123a",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("de94156e-56ed-4008-8b2c-56aa3c4a68e3",
@@ -97,6 +100,7 @@ end if;',
 	1,
 	'',
 	"730ee9f9-3ba1-4bd2-9f66-8580d3c7f16e",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("6f0ad9d1-0e79-4a12-986a-84cab223229e",

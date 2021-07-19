@@ -51,6 +51,7 @@ bucket.Initialized();',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("3258bf83-0a62-4d3d-9018-1790dfd6a84f",
@@ -67,6 +68,7 @@ bucket.AddToSuite();',
 	1,
 	'',
 	"9d22bca8-749e-4add-bcfa-e51cca7e2891",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("91a2ca48-abff-4e1d-9115-98b903a0af77",
@@ -81,6 +83,7 @@ send Operator::OpenCarpark();',
 	1,
 	'',
 	"3258bf83-0a62-4d3d-9018-1790dfd6a84f",
+	0,
 	0);
 INSERT INTO O_ID
 	VALUES (0,

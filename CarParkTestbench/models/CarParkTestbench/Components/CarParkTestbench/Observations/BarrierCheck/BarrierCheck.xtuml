@@ -30,6 +30,7 @@ observation.AddTriggered( seqLabel:param.seqLabel, timeLimit:0, key:"BarrierComm
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("d1fab847-4cb1-4350-b3ea-606459aa374c",
@@ -99,6 +100,7 @@ end if;',
 	1,
 	'',
 	"c15958c2-3db1-4e76-bd93-56a32871612f",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("fe586aa6-8e7c-4f1d-98cc-ae7460f52eee",

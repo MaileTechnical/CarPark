@@ -10,7 +10,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'VehicleWaiting',
-	'Indicates a vehicle has arrived and is waiting at the exit stand.');
+	'Indicates a vehicle has arrived and is waiting at the exit stand.',
+	0);
 INSERT INTO C_AS
 	VALUES ("b3f31032-49a3-4845-9e8a-03103f750cdc",
 	'VehicleWaiting',
@@ -31,7 +32,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'VehicleExited',
-	'Indicates a vehicle has exited the carpark through the exit stand.');
+	'Indicates a vehicle has exited the carpark through the exit stand.',
+	0);
 INSERT INTO C_AS
 	VALUES ("ed36bd77-6fda-48f3-a9fb-7e00759b1b57",
 	'VehicleExited',
@@ -52,7 +54,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'OpenBarrier',
-	'Commands the exit stand to open the barrier, permitting vehicles to exit the carpark.');
+	'Commands the exit stand to open the barrier, permitting vehicles to exit the carpark.',
+	0);
 INSERT INTO C_AS
 	VALUES ("94176f94-59e4-424f-93c7-c63bd6df3325",
 	'OpenBarrier',
@@ -73,7 +76,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'InsertedTicket',
-	'Indicates a ticket has been inserted into the exit stand.');
+	'Indicates a ticket has been inserted into the exit stand.',
+	0);
 INSERT INTO C_AS
 	VALUES ("edaae9b0-1293-42d5-9588-eebd4c4e58e9",
 	'InsertedTicket',
@@ -103,7 +107,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'CloseBarrier',
-	'Commands the exit stand to close the barrier, preventing vehicles from exiting the carpark.');
+	'Commands the exit stand to close the barrier, preventing vehicles from exiting the carpark.',
+	0);
 INSERT INTO C_AS
 	VALUES ("1156e097-b935-4375-835b-405ad15cc03d",
 	'CloseBarrier',
@@ -124,7 +129,8 @@ INSERT INTO C_EP
 	"7899d3af-2715-4b8f-a3b5-f0508005328d",
 	-1,
 	'Register',
-	'Announce the creation of a new instance at the specified location.');
+	'Announce the creation of a new instance at the specified location.',
+	0);
 INSERT INTO C_AS
 	VALUES ("771c37e5-26b2-4cd4-bcfa-01ccfb15a164",
 	'Register',

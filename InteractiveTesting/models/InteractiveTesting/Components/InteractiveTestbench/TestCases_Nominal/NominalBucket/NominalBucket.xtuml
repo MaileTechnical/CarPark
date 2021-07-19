@@ -30,6 +30,7 @@ send Operator::OpenCarpark();',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("d57fd7e5-5cf8-4f0e-b5e2-090310f7751a",
@@ -60,6 +61,7 @@ send Operator::OpenCarpark();',
 	1,
 	'',
 	"a5766775-3436-41d2-8e06-b6cd4db263ab",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("3efc45c1-20d4-493c-9489-eefe93768faa",

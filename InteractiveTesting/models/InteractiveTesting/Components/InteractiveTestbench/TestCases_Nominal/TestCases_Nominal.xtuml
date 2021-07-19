@@ -23,6 +23,7 @@ INSERT INTO C_C_PROXY
 	"00000000-0000-0000-0000-000000000000",
 	0,
 	'',
+	'',
 	'../InteractiveTestbench.xtuml');
 INSERT INTO S_SYS_PROXY
 	VALUES ("dccd26e2-5328-45c4-8ada-fed969fc6ffe",
