@@ -1,5 +1,9 @@
 # CarPark
 An automated carpark (parking garage) control system.  
+## License
+This is Open Source Software (OSS) licensed under Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0). 
+
+Documentation is licensed under Creative Commons (https://creativecommons.org/).
 ## Configurations
 The following configurations exist:
 1. Interactive Testing.  Employs a modeled test bench, enabling interactive testing with Verifier and Ciera-generated code using `pom-testbench.xml`.
@@ -74,3 +78,5 @@ Within the top-level (git repo) directory:
 5. Open at least one of each type of client in a browser:  localhost:8080/*clientType*.html where *clientType* is one of TestControl, OperatorConsole, EntryStand, ExitStand, PaymentMachine.
 6. The current version of the application contains a fee schedule supporting a single day, April 1, 2025. Use the TestControl client to set the current date and time (as seen by the application) to something between 6:00 a.m. and 6:00 p.m. on this day.
 7. Use the clients to execute and observe use cases.  For example, you might use the entry stand to put a car into the carpark, then use the test control to advance time (simulating a stay of a specified duration), then use the payment machine to pay for the stay, then use the test control to advance time again (simulating the time elapsed between paying for the stay and exiting the carpark), and finally use the exit stand to make the vehicle exit the carpark.
+## Issues
+Please open issues for defects and feature requests within the GitHub issues database for this repository.
