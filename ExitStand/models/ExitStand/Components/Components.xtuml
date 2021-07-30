@@ -166,7 +166,7 @@ INSERT INTO GD_GE
 	"3134e0f0-1e20-48b6-a799-5de4502cda60",
 	93,
 	0,
-	'ExitStand::Components::ExitStand::Port1::Unnamed Interface');
+	'ExitStand::Components::ExitStand::Operator::Intercom');
 INSERT INTO GD_CON
 	VALUES ("03c1fb15-6607-4787-875b-25eab9130818",
 	"00000000-0000-0000-0000-000000000000");

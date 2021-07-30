@@ -42,6 +42,7 @@ generate EntryStand6:TicketIssued() to self;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("ee8ea1dd-9141-48e6-86b1-559b19c5f9b1",
@@ -67,6 +68,7 @@ end if;',
 	1,
 	'',
 	"e524167a-78e1-46df-90ba-0a13fd9d60b2",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("f7569b8d-fc7f-4598-ac1c-19206a765c8d",

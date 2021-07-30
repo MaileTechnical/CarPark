@@ -61,7 +61,7 @@ INSERT INTO GD_GE
 	"cba51a94-8f08-44d4-af84-9adb6451b70d",
 	93,
 	0,
-	'PaymentMachine::Components::PaymentMachine::Port1::PaymentMachine');
+	'PaymentMachine::Components::PaymentMachine::CarPark::PaymentMachine');
 INSERT INTO GD_CON
 	VALUES ("c7666a6e-c780-42a7-a744-3d53046f9e45",
 	"00000000-0000-0000-0000-000000000000");

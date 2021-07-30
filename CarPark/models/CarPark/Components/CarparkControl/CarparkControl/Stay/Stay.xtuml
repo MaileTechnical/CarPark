@@ -47,6 +47,7 @@ return disposition;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO S_DT_PROXY
 	VALUES ("80478fa4-2779-4e87-a200-6cc9a502e760",
@@ -82,6 +83,7 @@ end for;',
 	1,
 	'',
 	"751b003c-8805-4812-ad25-1c5be4949853",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("bc8cfa9a-3b0c-457e-840d-222ea12cb4ca",
@@ -163,6 +165,7 @@ end while;',
 	1,
 	'',
 	"06197662-c0f1-4004-b298-a27ee1441249",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("ce68b82c-fe30-454f-834f-1d751f2c1ec2",
@@ -228,6 +231,7 @@ end for;',
 	1,
 	'',
 	"5ec3c370-e4d4-48c1-9495-dc0a5f6e4177",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("4688c039-b4ac-457d-b154-20d5a88099f6",
@@ -254,6 +258,7 @@ delete object instance charge;',
 	1,
 	'',
 	"bc8cfa9a-3b0c-457e-840d-222ea12cb4ca",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("3a4f8fd6-8175-4df5-9ac0-a7a009e75234",
@@ -276,6 +281,7 @@ end if;',
 	1,
 	'',
 	"4688c039-b4ac-457d-b154-20d5a88099f6",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("540c25f5-6252-4bbd-8794-d09ba941d244",
@@ -329,6 +335,7 @@ end if;
 	1,
 	'',
 	"3a4f8fd6-8175-4df5-9ac0-a7a009e75234",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("48ad1eab-ce0d-4eeb-b353-4bbe45a4f93c",

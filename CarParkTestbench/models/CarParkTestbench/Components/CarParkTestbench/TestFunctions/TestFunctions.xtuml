@@ -46,6 +46,7 @@ NominalCaseBucket::AddBucketToSuite();
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("8ead4405-31c0-4b5c-a9a5-07e3b7222436",
@@ -65,6 +66,7 @@ NonNominalCaseBucket::AddBucketToSuite();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("04200a9e-d961-44bc-92f1-43afbe9cec1d",
@@ -83,6 +85,7 @@ DemonstrationCaseBucket::AddBucketToSuite();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("953f634c-3b10-4837-b42f-c6844f50c554",
@@ -101,6 +104,7 @@ EscapeCaseBucket::AddBucketToSuite();',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	1,
 	'',
+	0,
 	0);
 INSERT INTO PE_PE
 	VALUES ("ba2c6c34-50e4-41f5-a78a-952638baf966",
@@ -123,6 +127,7 @@ INSERT INTO C_C_PROXY
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'',
 	'../CarParkTestbench.xtuml');
 INSERT INTO S_SYS_PROXY

@@ -28,6 +28,7 @@ observation.AddTriggered( seqLabel:param.seqLabel, timeLimit:60, key:"Balance"+p
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("b47fa567-e8b7-4a8c-97d8-6afee7209398",
@@ -120,6 +121,7 @@ end if;',
 	1,
 	'',
 	"9a2bcf51-a846-4158-82a2-638cb4f6046a",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("33b75697-f988-42ed-aaef-cf7393a730d6",

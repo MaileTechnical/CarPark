@@ -21,6 +21,7 @@ paystand.TransactionCancelled = false;',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("71cf6de5-e838-45ff-8a47-9ec8f7491e67",

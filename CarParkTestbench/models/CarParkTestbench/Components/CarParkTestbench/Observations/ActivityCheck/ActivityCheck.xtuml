@@ -29,6 +29,7 @@ observation.AddImmediate( seqLabel:param.seqLabel, pollInterval:1, timeLimit:5, 
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("3991802f-f718-4f44-91ff-7ba601422fd4",
@@ -128,6 +129,7 @@ end if;',
 	1,
 	'',
 	"a18a453a-92a0-4877-bb04-199f0c919650",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("a18a453a-92a0-4877-bb04-199f0c919650",
@@ -151,6 +153,7 @@ observation.AddImmediate( seqLabel:param.seqLabel, pollInterval:1, timeLimit:5, 
 	1,
 	'',
 	"661920fa-0240-45d2-bb3d-3c04c3d2cdd2",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("65b16c64-1d6b-46ed-8ae2-5f19add39685",

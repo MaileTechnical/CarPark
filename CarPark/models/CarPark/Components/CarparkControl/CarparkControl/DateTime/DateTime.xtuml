@@ -34,6 +34,7 @@ date_time.StartTimer();',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("852f8656-d477-4b71-8691-235d17f689e0",
@@ -122,6 +123,7 @@ return date_time_str;',
 	1,
 	'',
 	"02d8cc6b-4e1f-4aa1-afeb-9b90cf117094",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("06b4073d-ee57-43da-bacc-9658142c0a1a",
@@ -147,6 +149,7 @@ self.UpdateTimer = TIM::timer_start_recurring( event_inst:update, microseconds:u
 	1,
 	'',
 	"803e578e-44ec-48b1-b9d4-57b4e77d5794",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("d0f5f740-6bee-4f13-8fee-5a572ff120a5",
@@ -161,6 +164,7 @@ return TIM::current_seconds() + dt.UTC_Offset;',
 	1,
 	'',
 	"84c3be7a-7619-4717-bf11-b1c474abf38e",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("9319f948-72db-4dfe-9e9b-41dd03d50b26",

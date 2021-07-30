@@ -10,7 +10,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'CancelledTransaction',
-	'Indicates the patron cancelled the current transaction.');
+	'Indicates the patron cancelled the current transaction.',
+	0);
 INSERT INTO C_AS
 	VALUES ("aeb8e261-7eb2-4971-a3cb-e35a714490b3",
 	'CancelledTransaction',
@@ -32,7 +33,8 @@ INSERT INTO C_EP
 	-1,
 	'WaivedChange',
 	'Indicates the patron waived any change due at a payment machine
-containing insufficient change to settle the current transaction.');
+containing insufficient change to settle the current transaction.',
+	0);
 INSERT INTO C_AS
 	VALUES ("f66a3b7f-d47f-4c2b-9f66-1ce143dc9e4d",
 	'WaivedChange',
@@ -54,7 +56,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'TicketCollected',
-	'Indicates the patron collected a ticket returned by the payment machine.');
+	'Indicates the patron collected a ticket returned by the payment machine.',
+	0);
 INSERT INTO C_AS
 	VALUES ("1a93d819-e152-409f-8b77-23b28cb652bb",
 	'TicketCollected',
@@ -75,7 +78,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'InsertedTicket',
-	'Indicates that a patron inserted a ticket into a payment machine.');
+	'Indicates that a patron inserted a ticket into a payment machine.',
+	0);
 INSERT INTO C_AS
 	VALUES ("6bdbefd7-2814-447f-a902-ed56cfceddfb",
 	'InsertedTicket',
@@ -105,7 +109,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'InsertedCurrency',
-	'Indicates that a patron inserted currency into a payment machine.');
+	'Indicates that a patron inserted currency into a payment machine.',
+	0);
 INSERT INTO C_AS
 	VALUES ("ed039022-908c-4f0a-bb12-81c944031952",
 	'InsertedCurrency',
@@ -137,7 +142,8 @@ INSERT INTO C_EP
 	-1,
 	'RemainingBalance',
 	'Provides the remaining balance for the stay associated with the ticket
-currently inserted in a payment machine.');
+currently inserted in a payment machine.',
+	0);
 INSERT INTO C_AS
 	VALUES ("e6bd25b1-8a4d-4a8a-a068-e149f8b48ebb",
 	'RemainingBalance',
@@ -170,7 +176,8 @@ INSERT INTO C_EP
 	-1,
 	'InsufficientChange',
 	'Indicates that this payment machine contain insufficient change to settle
-the current transaction.');
+the current transaction.',
+	0);
 INSERT INTO C_AS
 	VALUES ("acfc0128-4d4f-4a0e-87ed-988ebe170166",
 	'InsufficientChange',
@@ -192,7 +199,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'ReturnedTicket',
-	'Commands a payment machine to return the currently-inserted ticket to the patron.');
+	'Commands a payment machine to return the currently-inserted ticket to the patron.',
+	0);
 INSERT INTO C_AS
 	VALUES ("ab99ffd4-de35-47a9-9eb4-ee31927071ec",
 	'ReturnedTicket',
@@ -214,7 +222,8 @@ INSERT INTO C_EP
 	-1,
 	'ExitDeadline',
 	'Provides the exit deadline (date/time) from the carpark system to a payment machine, 
-so the latter can print it on the ticket before returning the ticket to the patron.');
+so the latter can print it on the ticket before returning the ticket to the patron.',
+	0);
 INSERT INTO C_AS
 	VALUES ("7d98badf-0872-49ac-a66e-72a2d0d07fa7",
 	'ExitDeadline',
@@ -247,7 +256,8 @@ INSERT INTO C_EP
 	-1,
 	'DispenseChange',
 	'Commands a payment machine to dispense change to settle the current transaction.
-Note: Also used to dispense refund of any payment when a transaction is cancelled.');
+Note: Also used to dispense refund of any payment when a transaction is cancelled.',
+	0);
 INSERT INTO C_AS
 	VALUES ("f6708800-f5f1-4db3-bf94-550b4dd6e170",
 	'DispenseChange',
@@ -279,7 +289,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'TransactionCancelled',
-	'Indicates that the current transaction was cancelled by the carpark system.');
+	'Indicates that the current transaction was cancelled by the carpark system.',
+	0);
 INSERT INTO C_AS
 	VALUES ("e25325e0-cebe-4e34-8814-1a1f84c7e4a4",
 	'TransactionCancelled',
@@ -309,7 +320,8 @@ INSERT INTO C_EP
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'Register',
-	'Announce the creation of a new instance at the specified location.');
+	'Announce the creation of a new instance at the specified location.',
+	0);
 INSERT INTO C_AS
 	VALUES ("564726c1-9ef0-4f1f-b299-5d272941b451",
 	'Register',

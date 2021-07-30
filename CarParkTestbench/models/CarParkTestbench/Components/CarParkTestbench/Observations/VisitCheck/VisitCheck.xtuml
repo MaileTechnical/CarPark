@@ -32,6 +32,7 @@ obs.AddImmediate( seqLabel:param.seqLabel, pollInterval:1, timeLimit:5, concurre
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("56554ca1-d350-43da-b1d8-a59ac258391e",
@@ -118,6 +119,7 @@ end if;
 	1,
 	'',
 	"39fd9991-da4b-44bf-b875-0ffe7aaea5a2",
+	0,
 	0);
 INSERT INTO O_TFR
 	VALUES ("39fd9991-da4b-44bf-b875-0ffe7aaea5a2",
@@ -143,6 +145,7 @@ obs.AddImmediate( seqLabel:param.seqLabel, pollInterval:1, timeLimit:25, concurr
 	1,
 	'',
 	"cf0e4a91-0946-452d-b423-45b2af45ff00",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("b98e15f4-a397-4116-a755-ea12396a932a",
@@ -226,6 +229,7 @@ obs.AddImmediate( seqLabel:param.seqLabel, pollInterval:1, timeLimit:5, concurre
 	1,
 	'',
 	"3a8f1247-29c9-4d0d-b768-9daf9f244f3d",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("be4db761-10ad-4263-b82c-9ba417c7b3ea",

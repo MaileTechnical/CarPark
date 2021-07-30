@@ -29,10 +29,10 @@
   </properties>
   <repositories>
     <repository>
-      <id>snapshots-repo</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/mailetechnical/*</url>
       <releases><enabled>true</enabled></releases>
-      <snapshots><enabled>false</enabled></snapshots>
+      <snapshots><enabled>true</enabled></snapshots>
     </repository>
     <repository>
       <id>spring-releases</id>
@@ -41,10 +41,10 @@
   </repositories>
   <pluginRepositories>
     <pluginRepository>
-      <id>snapshots-repo</id>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      <id>github</id>
+      <url>https://maven.pkg.github.com/mailetechnical/*</url>
       <releases><enabled>true</enabled></releases>
-      <snapshots><enabled>false</enabled></snapshots>
+      <snapshots><enabled>true</enabled></snapshots>
     </pluginRepository>
     <pluginRepository>
       <id>spring-releases</id>
@@ -55,7 +55,7 @@
     <dependency>
       <groupId>io.ciera</groupId>
       <artifactId>runtime</artifactId>
-      <version>2.4.0</version>
+      <version>2.5.0</version>
     </dependency>
     <dependency>
       <groupId>org.xtuml</groupId>
@@ -132,7 +132,7 @@
       <plugin>
         <groupId>io.ciera</groupId>
         <artifactId>ciera-maven-plugin</artifactId>
-        <version>2.4.0</version>
+        <version>2.5.0</version>
         <executions>
           <execution>
             <id>pre-build</id>

@@ -28,6 +28,7 @@ observation.AddTriggered( seqLabel:param.seqLabel, timeLimit:0, key:"TicketReque
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("ec249fa8-9ea1-403e-9ec9-b8d3a37d9f47",
@@ -78,6 +79,7 @@ end if;',
 	1,
 	'',
 	"9319eb71-f999-450a-9330-51c9a69a3406",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("c6798ca2-49a1-4fdd-a233-b9d474312f2e",

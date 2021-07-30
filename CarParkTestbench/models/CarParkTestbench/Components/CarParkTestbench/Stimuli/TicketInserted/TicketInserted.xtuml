@@ -27,6 +27,7 @@ stimulus.AddToTest( seqLabel:param.seqLabel );',
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("b3425075-f6a4-45a2-9106-78650a3cb20b",
@@ -92,6 +93,7 @@ stimulus.Complete();
 	1,
 	'',
 	"c625f2df-3cdf-4082-a871-c7c68fed0a68",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("2e822ca3-db41-40a3-b80d-758bc42699f0",

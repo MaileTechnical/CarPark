@@ -26,6 +26,7 @@ obs.AddTriggered( seqLabel:param.seqLabel, timeLimit:0, key:"TicketReturned", co
 	1,
 	'',
 	"00000000-0000-0000-0000-000000000000",
+	0,
 	0);
 INSERT INTO O_TPARM
 	VALUES ("1165dc10-ad7c-45fa-9108-00b71042545e",
@@ -67,6 +68,7 @@ end if;
 	1,
 	'',
 	"b5fa2fec-0eac-49de-93f4-82eba55a9efb",
+	0,
 	0);
 INSERT INTO O_NBATTR
 	VALUES ("49bc5d85-3372-41c9-94b7-b12545a4cb21",

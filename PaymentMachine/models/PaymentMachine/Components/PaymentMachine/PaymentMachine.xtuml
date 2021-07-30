@@ -9,6 +9,7 @@ INSERT INTO C_C
 	0,
 	"00000000-0000-0000-0000-000000000000",
 	0,
+	'',
 	'');
 INSERT INTO GD_MD
 	VALUES ("22d6830a-b486-4089-9185-c58dddc2bf91",
@@ -194,7 +195,8 @@ INSERT INTO C_PO
 	"9ce675de-740a-4d77-833b-66ab4d7d13eb",
 	'CarPark',
 	0,
-	0);
+	0,
+	'');
 INSERT INTO C_IR
 	VALUES ("cba51a94-8f08-44d4-af84-9adb6451b70d",
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
@@ -216,6 +218,7 @@ INSERT INTO SPR_RS
 	'Indicates the patron cancelled the current transaction.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("aeb8e261-7eb2-4971-a3cb-e35a714490b3",
@@ -223,6 +226,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'CancelledTransaction',
 	'Indicates the patron cancelled the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("fa32836d-6fd5-4dfe-865e-a1d0189a74dc",
@@ -235,6 +239,7 @@ INSERT INTO SPR_RS
 containing insufficient change to settle the current transaction.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("f66a3b7f-d47f-4c2b-9f66-1ce143dc9e4d",
@@ -243,6 +248,7 @@ INSERT INTO C_EP_PROXY
 	'WaivedChange',
 	'Indicates the patron waived any change due at a payment machine
 containing insufficient change to settle the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("b70ee109-784e-4c06-acc4-d8ff95271bf3",
@@ -254,6 +260,7 @@ INSERT INTO SPR_RS
 	'Indicates the patron collected a ticket returned by the payment machine.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("1a93d819-e152-409f-8b77-23b28cb652bb",
@@ -261,6 +268,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TicketCollected',
 	'Indicates the patron collected a ticket returned by the payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("e3f40a46-6e07-493f-b8df-583322e50353",
@@ -272,6 +280,7 @@ INSERT INTO SPR_RS
 	'Indicates that a patron inserted a ticket into a payment machine.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("6bdbefd7-2814-447f-a902-ed56cfceddfb",
@@ -279,6 +288,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedTicket',
 	'Indicates that a patron inserted a ticket into a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("7a1a0230-b07a-4b51-8d27-ea13f45c3b26",
@@ -290,6 +300,7 @@ INSERT INTO SPR_RS
 	'Indicates that a patron inserted currency into a payment machine.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ed039022-908c-4f0a-bb12-81c944031952",
@@ -297,6 +308,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'InsertedCurrency',
 	'Indicates that a patron inserted currency into a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("304ec5c1-ba7c-49e9-9d94-2c059a63b236",
@@ -309,6 +321,7 @@ INSERT INTO SPR_RS
 currently inserted in a payment machine.',
 	'::RemainingBalance( Location:param.Location, Amount:param.Amount );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e6bd25b1-8a4d-4a8a-a068-e149f8b48ebb",
@@ -317,6 +330,7 @@ INSERT INTO C_EP_PROXY
 	'RemainingBalance',
 	'Provides the remaining balance for the stay associated with the ticket
 currently inserted in a payment machine.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("7c5ef413-5563-42dd-8fc3-e77340c271d0",
@@ -329,6 +343,7 @@ INSERT INTO SPR_RS
 the current transaction.',
 	'::InsufficientChange( Location:param.Location );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("acfc0128-4d4f-4a0e-87ed-988ebe170166",
@@ -337,6 +352,7 @@ INSERT INTO C_EP_PROXY
 	'InsufficientChange',
 	'Indicates that this payment machine contain insufficient change to settle
 the current transaction.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("8e29fdc1-4e8f-48a9-8005-b1cd3672ec4e",
@@ -348,6 +364,7 @@ INSERT INTO SPR_RS
 	'Commands a payment machine to return the currently-inserted ticket to the patron.',
 	'::ReturnedTicket( Location:param.Location );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("ab99ffd4-de35-47a9-9eb4-ee31927071ec",
@@ -355,6 +372,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'ReturnedTicket',
 	'Commands a payment machine to return the currently-inserted ticket to the patron.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("9fb9a563-55f0-478c-9825-ac4ffdea7685",
@@ -367,6 +385,7 @@ INSERT INTO SPR_RS
 so the latter can print it on the ticket before returning the ticket to the patron.',
 	'::ExitDeadline( Location:param.Location, Deadline:param.Deadline );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("7d98badf-0872-49ac-a66e-72a2d0d07fa7",
@@ -375,6 +394,7 @@ INSERT INTO C_EP_PROXY
 	'ExitDeadline',
 	'Provides the exit deadline (date/time) from the carpark system to a payment machine, 
 so the latter can print it on the ticket before returning the ticket to the patron.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("0ff77c69-2a44-4b4d-be1a-b3e736c7c464",
@@ -383,16 +403,20 @@ INSERT INTO SPR_REP
 INSERT INTO SPR_RS
 	VALUES ("0ff77c69-2a44-4b4d-be1a-b3e736c7c464",
 	'DispenseChange',
-	'Commands a payment machine to dispense change to settle the current transaction.',
+	'Commands a payment machine to dispense change to settle the current transaction.
+Note: Also used to dispense refund of any payment when a transaction is cancelled.',
 	'::DispenseChange( Location:param.Location, Amount:param.Amount );',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("f6708800-f5f1-4db3-bf94-550b4dd6e170",
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'DispenseChange',
-	'Commands a payment machine to dispense change to settle the current transaction.',
+	'Commands a payment machine to dispense change to settle the current transaction.
+Note: Also used to dispense refund of any payment when a transaction is cancelled.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("ef0996e5-9a86-4e9c-b6a9-37d8d571a984",
@@ -405,6 +429,7 @@ INSERT INTO SPR_RS
 	'::TransactionCancelled( Location:param.Location, Why:param.Why );
 ',
 	1,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("e25325e0-cebe-4e34-8814-1a1f84c7e4a4",
@@ -412,6 +437,7 @@ INSERT INTO C_EP_PROXY
 	-1,
 	'TransactionCancelled',
 	'Indicates that the current transaction was cancelled by the carpark system.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO SPR_REP
 	VALUES ("53d0c010-5dd4-4c92-b435-49cbe6698642",
@@ -420,16 +446,18 @@ INSERT INTO SPR_REP
 INSERT INTO SPR_RS
 	VALUES ("53d0c010-5dd4-4c92-b435-49cbe6698642",
 	'Register',
-	'',
+	'Announce the creation of a new instance at the specified location.',
 	'',
 	3,
+	0,
 	0);
 INSERT INTO C_EP_PROXY
 	VALUES ("564726c1-9ef0-4f1f-b299-5d272941b451",
 	"1775761d-746e-41ae-a5e0-cd1a783dc665",
 	-1,
 	'Register',
-	'',
+	'Announce the creation of a new instance at the specified location.',
+	0,
 	'../../../../../CarPark/models/CarPark/Interfaces/PaymentMachine/PaymentMachine.xtuml');
 INSERT INTO C_I_PROXY
 	VALUES ("1775761d-746e-41ae-a5e0-cd1a783dc665",

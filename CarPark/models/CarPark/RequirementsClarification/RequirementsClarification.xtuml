@@ -464,7 +464,7 @@ INSERT INTO GD_GE
 	"cc8229cb-6451-4d69-bb45-90ba639532e7",
 	108,
 	0,
-	'CarPark::RequirementsClarification::AD18_Open-1');
+	'CarPark::RequirementsClarification::AD19_Close');
 INSERT INTO GD_SHP
 	VALUES ("22144f8d-06a1-49c4-bf22-3b71b8310646");
 INSERT INTO GD_NCS
