@@ -1,0 +1,69 @@
+-- BP 7.1.6 content: Package syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO EP_PKG
+	VALUES ("95e67613-7ef6-49ce-908b-79ac1bd09c73",
+	"00000000-0000-0000-0000-000000000000",
+	"87ff681e-390e-45ca-9f9c-e0259790ea6c",
+	'Unnamed Package',
+	'',
+	0);
+INSERT INTO GD_MD
+	VALUES ("6eebed02-6b7f-483e-a8de-6ba83784a6d7",
+	112,
+	"95e67613-7ef6-49ce-908b-79ac1bd09c73",
+	108,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'CarParkTestbench::Components::CarParkTestbench::Unnamed Package');
+INSERT INTO DIM_DIA
+	VALUES ("6eebed02-6b7f-483e-a8de-6ba83784a6d7",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO EP_PKGREF
+	VALUES ("95e67613-7ef6-49ce-908b-79ac1bd09c73",
+	"19f4c26f-518e-4bac-983e-9519c6d49e42");
+INSERT INTO EP_PKG_PROXY
+	VALUES ("19f4c26f-518e-4bac-983e-9519c6d49e42",
+	"887b82b9-56ec-4387-b15a-8b42f655cdba",
+	"887b82b9-56ec-4387-b15a-8b42f655cdba",
+	'SharedTypes',
+	'',
+	0,
+	'../../../../../../CarPark/models/CarPark/SharedTypes/SharedTypes.xtuml');
+INSERT INTO PE_PE
+	VALUES ("95e67613-7ef6-49ce-908b-79ac1bd09c73",
+	1,
+	"00000000-0000-0000-0000-000000000000",
+	"267abe01-5adc-42d6-aa1d-2adf945776bc",
+	7);
+INSERT INTO C_C_PROXY
+	VALUES ("267abe01-5adc-42d6-aa1d-2adf945776bc",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'CarParkTestbench',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'',
+	'../CarParkTestbench.xtuml');
+INSERT INTO S_SYS_PROXY
+	VALUES ("87ff681e-390e-45ca-9f9c-e0259790ea6c",
+	'CarParkTestbench',
+	1,
+	'../../../CarParkTestbench.xtuml');
