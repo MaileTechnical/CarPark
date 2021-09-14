@@ -4,7 +4,7 @@ INSERT INTO EP_PKG
 	VALUES ("95e67613-7ef6-49ce-908b-79ac1bd09c73",
 	"00000000-0000-0000-0000-000000000000",
 	"87ff681e-390e-45ca-9f9c-e0259790ea6c",
-	'Unnamed Package',
+	'SharedTypesRef',
 	'',
 	0);
 INSERT INTO GD_MD
@@ -25,7 +25,7 @@ INSERT INTO GD_MD
 	0,
 	0,
 	'',
-	'CarParkTestbench::Components::CarParkTestbench::Unnamed Package');
+	'CarParkTestbench::Components::CarParkTestbench::SharedTypesRef');
 INSERT INTO DIM_DIA
 	VALUES ("6eebed02-6b7f-483e-a8de-6ba83784a6d7",
 	'',
