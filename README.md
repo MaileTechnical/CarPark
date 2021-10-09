@@ -1,5 +1,6 @@
 # CarPark
 An automated carpark (parking garage) control system.  
+Requirements for the system are expressed in a [document](https://github.com/MaileTechnical/CarPark/blob/master/CarPark-SRS.pdf) within this repository.
 ## License
 This is Open Source Software (OSS) licensed under Apache 2.0 (http://www.apache.org/licenses/LICENSE-2.0). 
 
