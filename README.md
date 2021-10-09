@@ -80,3 +80,9 @@ Within the top-level (git repo) directory:
 7. Use the clients to execute and observe use cases.  For example, you might use the entry stand to put a car into the carpark, then use the test control to advance time (simulating a stay of a specified duration), then use the payment machine to pay for the stay, then use the test control to advance time again (simulating the time elapsed between paying for the stay and exiting the carpark), and finally use the exit stand to make the vehicle exit the carpark.
 ## Issues
 Please open issues for defects and feature requests within the GitHub issues database for this repository.
+## Contributions
+To contribute enhancements or defect resolutions, please follow this simple process:
+1. Open an issue.  Each issue should cover a single defect or enhancement.
+2. On your personal fork of the repository, create a branch named <issueNumber>_<short description of defect or enhancement> and make the changes on this branch.
+3. Test your changes on all configurations.
+4. Issue a pull request for your branch.
