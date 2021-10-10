@@ -24,7 +24,7 @@ The built-in external entities provided by BridgePoint 7 (or later) can be added
 - InteractiveTesting
 ### Automated Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
-2. Import the TestFramework project from the [TestFramework repository.](https://github.com/amullarney/TestFramework)
+2. Import the TestFramework project from the [TestFramework repository.](github.com/MaileTechnical/TestFramework)
 3. Import the following projects from this repository:
 - CarPark
 - CarParkTestbench
