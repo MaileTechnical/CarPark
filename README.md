@@ -24,7 +24,7 @@ The built-in external entities provided by BridgePoint 7 (or later) can be added
 - InteractiveTesting
 ### Automated Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
-2. Import the TestFramework project from the [TestFramework repository.](github.com/MaileTechnical/TestFramework)
+2. Import the TestFramework project from the [TestFramework repository.](https://github.com/MaileTechnical/TestFramework)
 3. Import the following projects from this repository:
 - CarPark
 - CarParkTestbench
@@ -57,7 +57,7 @@ As part of creating a debug configuration, the specific configuration of the app
 6. Run Verifier using this debug configuration 
 7. Execute any one of the functions found in TestFunctions package.
 ## Build and Run with Ciera
-Note that it is not necessary to invoke BridgePoint or import projects into a workspace before building with Ciera.  After cloning the relevant repositories, just follow the instructions for building the configuration of interest.  In addition to this repository, the [TestFramework repository.](github.com/MaileTechnical/TestFramework) must also be cloned to build and run the automated testing configuration. 
+Note that it is not necessary to invoke BridgePoint or import projects into a workspace before building with Ciera.  After cloning the relevant repositories, just follow the instructions for building the configuration of interest.  In addition to this repository, the [TestFramework repository.](https://github.com/MaileTechnical/TestFramework) must also be cloned to build and run the automated testing configuration. 
 ### Interactive Testing
 Within the top-level (git repo) directory:
 1. Select the interactive testbench configuration by issuing the command `cp pom-testbench.xml pom.xml`.
