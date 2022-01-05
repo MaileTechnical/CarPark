@@ -821,7 +821,7 @@ INSERT INTO GD_GE
 	"95e67613-7ef6-49ce-908b-79ac1bd09c73",
 	108,
 	0,
-	'CarParkTestbench::Components::CarParkTestbench::Unnamed Package');
+	'CarParkTestbench::Components::CarParkTestbench::SharedTypesRef');
 INSERT INTO GD_SHP
 	VALUES ("3f8b5654-d2e5-441f-b5cd-7d9527c37040");
 INSERT INTO GD_NCS
