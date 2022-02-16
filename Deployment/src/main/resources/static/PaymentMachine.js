@@ -58,8 +58,8 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/PaymentMachine/' + $("#location").val(), function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/PaymentMachine/' + $("#location").val(), function (message) {
+            showReply(JSON.parse(message).content);
         });
     });
 }
@@ -98,28 +98,28 @@ function sendToServer( messageName ) {
 // the incoming message.
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
-    if ( message.includes( "Exit deadline" ) ) {
-    	vm.ExitDeadline = message;
-    } else if ( message == "InsufficientChange" ) {
+    var messageName = JSON.parse(message.body).messageName;
+    var payload = JSON.parse(message.body).payload;
+    if ( messageName == "ExitDeadline" ) {
+    	vm.ExitDeadline = JSON.parse(payload).Amount;
+    } else if ( messageName == "InsufficientChange" ) {
         vm.InsufficientChange = true;
     	vm.WaivedChangeDisabled = false;
     	vm.InsertedCurrencyDisabled = true;
-    } else if ( message.includes( "Remaining balance"  )) {
+    } else if ( messageName == "RemainingBalance" ) {
     	vm.InsertedCurrencyDisabled = false;
         vm.CancelledTransactionDisabled = false;
-        var balanceIndex = message.indexOf( ": " ) + 2;
-        vm.RemainingBalance = "Remaining balance: " + (Number( message.slice( balanceIndex ) ).toFixed(2)).toString();
-    } else if ( message == "ReturnedTicket" ) {
+        vm.RemainingBalance = Number( JSON.parse(payload).Amount ).toFixed(2).toString();
+    } else if ( messageName == "ReturnedTicket" ) {
     	vm.TicketCollectedDisabled = false;
     	vm.CancelledTransactionDisabled = true;
     	vm.InsertedCurrencyDisabled = true;
     	vm.WaivedChangeDisabled = true;
     	vm.InsufficientChange = false;
-    } else if ( message.includes( "Dispense change" ) ) {
-    	var changeIndex = message.indexOf( ": " ) + 2;
-    	vm.ChangeDispensed = "Change dispensed: " + (Number( message.slice( changeIndex ) ).toFixed(2)).toString();
-    } else if ( message.includes( "Transaction cancelled by" ) ) {
-    	vm.CancelReason = message;
+    } else if ( messageName == "DispenseChange" ) {
+    	vm.ChangeDispensed = Number( JSON.parse(payload).Amount ).toFixed(2).toString();
+    } else if ( messageName == "TransactionCancelled ) {
+    	vm.CancelReason = JSON.parse(payload).Why;
     }
 }
 
