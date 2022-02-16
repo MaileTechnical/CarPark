@@ -24,8 +24,8 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/TestControl', function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/TestControl', function (message) {
+            showReply(message);
         });
     });
 }
