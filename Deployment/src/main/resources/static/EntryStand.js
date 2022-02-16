@@ -73,7 +73,6 @@ function sendToOperator( messageName ) {
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
     var messageName = JSON.parse(message.body).messageName;
-    var payload = JSON.parse(message.body).payload;
     if ( messageName == "Ticket request enabled" ) {
     	vm.TicketRequestDisabled = false;
     } else if ( messageName == "Open barrier" ) {

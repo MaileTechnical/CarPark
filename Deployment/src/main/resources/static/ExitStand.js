@@ -38,8 +38,8 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/ExitStand/' + $("#location").val(), function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/ExitStand/' + $("#location").val(), function (message) {
+            showReply(message);
         });
     });
 }
@@ -86,10 +86,11 @@ function sendToOperator( messageName ) {
 // the incoming message.
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
-    if ( message == "Open barrier" ) {
+    var messageName = JSON.parse(message.body).messageName;
+    if ( messageName == "Open barrier" ) {
     	vm.VehicleExitedDisabled = false;
     	vm.BarrierOpen = true;
-    } else if ( message == "Close barrier" ) {
+    } else if ( messageName == "Close barrier" ) {
     	vm.VehicleExitedDisabled = true;
     	vm.BarrierOpen = false;
     }
