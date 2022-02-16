@@ -22,7 +22,7 @@ function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
-        stompClient.send("/app/EXRegister", {}, JSON.stringify({'location': $("#location").val()}));
+        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val()}));
     }
     else {
         initialize();
@@ -33,7 +33,7 @@ function setConnected(connected) {
 // When connecting, subscribe to a location-specific topic to receive
 // messages sent from the server.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkExit-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
@@ -59,7 +59,7 @@ function toggleMsgs() {
 // Client-to-server messages.
 function sendToServer( messageName ) {
     stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
-    if ( messageName == "EXVehicleWaiting" ) {
+    if ( messageName == "VehicleWaiting" ) {
     	vm.InsertedTicketDisabled = false;
     	vm.VehicleWaitingDisabled = true;
     } else if ( messageName == "VehicleExited" )
@@ -87,10 +87,10 @@ function sendToOperator( messageName ) {
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
     var messageName = JSON.parse(message.body).messageName;
-    if ( messageName == "Open barrier" ) {
+    if ( messageName == "OpenBarrier" ) {
     	vm.VehicleExitedDisabled = false;
     	vm.BarrierOpen = true;
-    } else if ( messageName == "Close barrier" ) {
+    } else if ( messageName == "CloseBarrier" ) {
     	vm.VehicleExitedDisabled = true;
     	vm.BarrierOpen = false;
     }
@@ -103,7 +103,7 @@ $(function () {
     });
     $( "#connect" ).click(function() { connect(); });
     $( "#disconnect" ).click(function() { disconnect(); });
-    $( "#VehicleWaiting" ).click(function() { sendToServer( "EXVehicleWaiting" ); });
+    $( "#VehicleWaiting" ).click(function() { sendToServer( "VehicleWaiting" ); });
     $( "#InsertedTicket" ).click(function() { sendInsertedTicket(); });
     $( "#VehicleExited" ).click(function() { sendToServer( "VehicleExited" ); });
     $( "#msgdisplay" ).click(function() { toggleMsgs(); });

@@ -37,7 +37,7 @@ function toggleMsgs() {
 // When connecting, subscribe to a location-specific topic to receive
 // messages sent from the server.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkEntry-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
@@ -73,16 +73,16 @@ function sendToOperator( messageName ) {
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
     var messageName = JSON.parse(message.body).messageName;
-    if ( messageName == "Ticket request enabled" ) {
+    if ( messageName == "TicketRequestEnabled" ) {
     	vm.TicketRequestDisabled = false;
-    } else if ( messageName == "Open barrier" ) {
+    } else if ( messageName == "OpenBarrier" ) {
     	vm.VehicleEnteredDisabled = false;
     	vm.TicketCollectedDisabled = true;
     	vm.BarrierOpen = true;
-    } else if ( messageName.includes( "Issue ticket"  )) {
+    } else if ( messageName == "IssueTicket" ) {
     	vm.TicketRequestDisabled = true;
     	vm.TicketCollectedDisabled = false;
-    } else if ( messageName == "Close barrier" ) {
+    } else if ( messageName == "CloseBarrier" ) {
     	vm.VehicleEnteredDisabled = true;
     	vm.BarrierOpen = false;
     }

@@ -164,7 +164,7 @@ function setConnected(connected) {
 // messages sent from the server.  All operator consoles
 // subscribe to the same topic, so they all see the same data.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkOperator-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);

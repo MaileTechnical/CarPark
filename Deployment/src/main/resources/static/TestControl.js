@@ -19,7 +19,7 @@ function setConnected(connected) {
 // When connecting, subscribe to a topic to receive
 // messages sent from the server.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkTestControl-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
