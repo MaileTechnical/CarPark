@@ -42,8 +42,8 @@ function connect() {
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/EntryStand/' + $("#location").val(), function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/EntryStand/' + $("#location").val(), function (message) {
+            showReply(message);
         });
     });
 }
@@ -72,16 +72,18 @@ function sendToOperator( messageName ) {
 // the incoming message.
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
-    if ( message == "Ticket request enabled" ) {
+    var messageName = JSON.parse(message.body).messageName;
+    var payload = JSON.parse(message.body).payload;
+    if ( messageName == "Ticket request enabled" ) {
     	vm.TicketRequestDisabled = false;
-    } else if ( message == "Open barrier" ) {
+    } else if ( messageName == "Open barrier" ) {
     	vm.VehicleEnteredDisabled = false;
     	vm.TicketCollectedDisabled = true;
     	vm.BarrierOpen = true;
-    } else if ( message.includes( "Issue ticket"  )) {
+    } else if ( messageName.includes( "Issue ticket"  )) {
     	vm.TicketRequestDisabled = true;
     	vm.TicketCollectedDisabled = false;
-    } else if ( message == "Close barrier" ) {
+    } else if ( messageName == "Close barrier" ) {
     	vm.VehicleEnteredDisabled = true;
     	vm.BarrierOpen = false;
     }
