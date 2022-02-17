@@ -1,30 +1,30 @@
 -- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
 
 INSERT INTO C_I
-	VALUES ("65263c05-9f4e-4876-85d0-8be1231ea965",
+	VALUES ("7b83c685-9188-420a-8363-fb96f8fef6c1",
 	"00000000-0000-0000-0000-000000000000",
 	'Intercom',
 	'This interface is not actually implemented, but represents, conceptually, what is desired.
 The present implementation uses socket communication only for the application interfaces.
 A help request bypasses the application and directly invokes messaging to the operator.');
 INSERT INTO C_EP
-	VALUES ("b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
-	"65263c05-9f4e-4876-85d0-8be1231ea965",
+	VALUES ("4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
 	-1,
 	'HelpRequest',
 	'Ask operator for assistance in case of a fault at an entry or exit stand.
 This signal is not implemented; currently there is no support for client-to-client communication.',
 	0);
 INSERT INTO C_AS
-	VALUES ("b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
+	VALUES ("4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
 	'HelpRequest',
 	'Ask operator for assistance in case of a fault at an entry or exit stand.
 This signal is not implemented; currently there is no support for client-to-client communication.',
 	0,
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_PP
-	VALUES ("c7caf463-da49-4378-85e9-8c1968cf045a",
-	"b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
+	VALUES ("85302749-e715-43b5-86b0-1badd04f2143",
+	"4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
 	"ba5eda7a-def5-0000-0000-000000000004",
 	'Location',
 	'Used as an identifier, this is the location of the entry stand.',
@@ -32,24 +32,24 @@ INSERT INTO C_PP
 	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO C_PP
-	VALUES ("30e90135-3ccb-4ede-a173-5224944c1c71",
-	"b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
+	VALUES ("80bf6d34-eb48-4d70-b9f0-03ddf7591dea",
+	"4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
 	"ba5eda7a-def5-0000-0000-000000000004",
 	'Peripheral',
 	'Whether "Entry" or "Exit" stand.',
 	0,
 	'',
-	"c7caf463-da49-4378-85e9-8c1968cf045a");
+	"85302749-e715-43b5-86b0-1badd04f2143");
 INSERT INTO PE_PE
-	VALUES ("65263c05-9f4e-4876-85d0-8be1231ea965",
+	VALUES ("7b83c685-9188-420a-8363-fb96f8fef6c1",
 	1,
-	"66443585-bb58-408d-b018-6c61f1f6396a",
+	"75e4b100-82c3-441d-879d-ea8d68148e8e",
 	"00000000-0000-0000-0000-000000000000",
 	6);
 INSERT INTO EP_PKG_PROXY
-	VALUES ("66443585-bb58-408d-b018-6c61f1f6396a",
-	"887b82b9-56ec-4387-b15a-8b42f655cdba",
-	"887b82b9-56ec-4387-b15a-8b42f655cdba",
+	VALUES ("75e4b100-82c3-441d-879d-ea8d68148e8e",
+	"be0ebc34-0a1f-4bb9-b3f0-247c7e69aaa2",
+	"be0ebc34-0a1f-4bb9-b3f0-247c7e69aaa2",
 	'Interfaces',
 	'',
 	0,

@@ -528,7 +528,7 @@ INSERT INTO C_PO
 	'');
 INSERT INTO C_IR
 	VALUES ("19010449-8aed-4ab1-a6ff-480630acdc9c",
-	"65263c05-9f4e-4876-85d0-8be1231ea965",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
 	"00000000-0000-0000-0000-000000000000",
 	"0fc240ce-1e09-463f-a4c8-610fbc604c1d");
 INSERT INTO C_R
@@ -538,11 +538,11 @@ INSERT INTO C_R
 	'Unnamed Interface',
 	'EntryStand::Operator::Intercom');
 INSERT INTO SPR_REP
-	VALUES ("82ab1583-6388-4844-b3ec-b02291f3e84d",
-	"b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
+	VALUES ("fc425ac9-9cd2-42d6-90c5-d6a5e1345d7f",
+	"4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
 	"19010449-8aed-4ab1-a6ff-480630acdc9c");
 INSERT INTO SPR_RS
-	VALUES ("82ab1583-6388-4844-b3ec-b02291f3e84d",
+	VALUES ("fc425ac9-9cd2-42d6-90c5-d6a5e1345d7f",
 	'HelpRequest',
 	'Ask operator for assistance in case of a fault at an entry or exit stand.
 This signal is not implemented; currently there is no support for client-to-client communication.',
@@ -551,22 +551,22 @@ This signal is not implemented; currently there is no support for client-to-clie
 	0,
 	0);
 INSERT INTO C_EP_PROXY
-	VALUES ("b348d4a2-0167-4b5a-a92a-6bd0ff46a050",
-	"65263c05-9f4e-4876-85d0-8be1231ea965",
+	VALUES ("4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
 	-1,
 	'HelpRequest',
 	'Ask operator for assistance in case of a fault at an entry or exit stand.
 This signal is not implemented; currently there is no support for client-to-client communication.',
 	0,
-	'../../../../../CarPark/models/CarPark/Interfaces/Intercom/Intercom.xtuml');
+	'../../../../../Intercom/models/Intercom/Interfaces/Intercom/Intercom.xtuml');
 INSERT INTO C_I_PROXY
-	VALUES ("65263c05-9f4e-4876-85d0-8be1231ea965",
+	VALUES ("7b83c685-9188-420a-8363-fb96f8fef6c1",
 	"00000000-0000-0000-0000-000000000000",
 	'Intercom',
 	'This interface is not actually implemented, but represents, conceptually, what is desired.
 The present implementation uses socket communication only for the application interfaces.
 A help request bypasses the application and directly invokes messaging to the operator.',
-	'../../../../../CarPark/models/CarPark/Interfaces/Intercom/Intercom.xtuml');
+	'../../../../../Intercom/models/Intercom/Interfaces/Intercom/Intercom.xtuml');
 INSERT INTO PE_PE
 	VALUES ("cf7a3d2b-ed93-4406-9369-9394eec5a5fd",
 	1,
