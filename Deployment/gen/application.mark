@@ -21,3 +21,5 @@ Components::Intercom::Help,EndPoint,Port,CarparkIntercom
 Components::Intercom::Operator,PortType,Port,SpringWebSocket
 Components::Intercom::Operator,SubscribeTopic,Port,OperatorConsole
 Components::Intercom::Operator,EndPoint,Port,CarparkIntercom
+Components::TestControl::TimeMgmt,PortType,Port,SpringWebSocket
+Components::TestControl::TimeMgmt,EndPoint,Port,TimeWarp
