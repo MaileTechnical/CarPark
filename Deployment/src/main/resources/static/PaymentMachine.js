@@ -38,7 +38,7 @@ function setConnected(connected) {
         if (document.getElementById('dispenses').checked){
             makesChange = true;
         }
-        stompClient.send("/app/PMRegister", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
+        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
     }
     else {
         initialize();
@@ -88,7 +88,7 @@ function sendInsertedCurrency( amount ) {
 
 function sendToServer( messageName ) {
     stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
-    if ( messageName == "PMTicketCollected" )
+    if ( messageName == "TicketCollected" )
     	initialize();
 }
 
@@ -138,6 +138,6 @@ $(function () {
     $( "#InsertedCurrency20" ).click(function() { sendInsertedCurrency( "20" ); });
     $( "#CancelledTransaction" ).click(function() { sendToServer( "CancelledTransaction" ); });
     $( "#WaivedChange" ).click(function() { sendToServer( "WaivedChange" ); });
-    $( "#TicketCollected" ).click(function() { sendToServer( "PMTicketCollected" ); });
+    $( "#TicketCollected" ).click(function() { sendToServer( "TicketCollected" ); });
     $( "#msgdisplay" ).click(function() { toggleMsgs(); });
 });
