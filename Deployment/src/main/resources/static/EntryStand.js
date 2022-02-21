@@ -35,9 +35,12 @@ function toggleMsgs() {
 }
 
 // When connecting, subscribe to a location-specific topic to receive
-// messages sent from the server.
+// messages sent from the server.  Also open a socket so that intercom 
+// messages can be sent out of this client.
 function connect() {
     var socket = new SockJS('/CarparkEntry-websocket');
+    var intercomSocket = new SockJS( '/CarparkIntercom-websocket');
+    stompIntercom = Stomp.over(intercomSocket);
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
@@ -52,6 +55,9 @@ function disconnect() {
     if (stompClient !== null) {
         stompClient.disconnect();
     }
+    if (stompIntercom !== null) {
+    	stompIntercom.disconnect();
+    }
     setConnected(false);
     console.log("Disconnected");
 }
@@ -63,7 +69,7 @@ function sendToServer( messageName ) {
 
 // Client-to-client messages - in fact, uses client-server-client path.
 function sendToOperator( messageName ) {
-    stompClient.send("/app/" + messageName, {}, 
+    stompIntercom.send("/app/" + messageName, {}, 
                      JSON.stringify({'location': $("#location").val(), 'peripheral': "Entry"}));
 }
 
