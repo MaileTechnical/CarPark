@@ -17,10 +17,10 @@ Model Class,UseKeyLettersForName
 Package,DoNotSerialize
 Port,BaseClass
 Port,HttpEndpoint
-Interface,Serialize
-Interface,GenerateMessageClasses
+Port,GenerateMessageClasses
 Port,PortType
 Port,SubscribeTopic
 Port,SubTopicParameter
 Port,EndPoint
+Port,MappingSuffix
 *,ApplicationNature

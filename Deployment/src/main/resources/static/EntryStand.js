@@ -22,7 +22,7 @@ function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
-        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val()}));
+        stompClient.send("/app/RegisterEntry", {}, JSON.stringify({'location': $("#location").val()}));
     }
     else {
         initialize();
@@ -64,7 +64,7 @@ function disconnect() {
 
 // Client-to-server messages.
 function sendToServer( messageName ) {
-    stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
+    stompClient.send("/app/" + messageName + "Entry", {}, JSON.stringify({'location': $("#location").val()}));
 }
 
 // Client-to-client messages - in fact, uses client-server-client path.

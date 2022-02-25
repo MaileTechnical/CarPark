@@ -3,7 +3,7 @@ var stompClient = null;
 var vm = new Vue({
 	el: '#main-content',
 	data: {
-	    InsertedTicketDisabled: false,
+	    InsertedTicketDisabled: true,
 	    InsertedCurrencyDisabled: true,
 	    TicketCollectedDisabled : true,
 	    WaivedChangeDisabled: true,
@@ -38,7 +38,8 @@ function setConnected(connected) {
         if (document.getElementById('dispenses').checked){
             makesChange = true;
         }
-        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
+        vm.InsertedTicketDisabled = false;
+        stompClient.send("/app/RegisterPayer", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
     }
     else {
         initialize();
@@ -59,7 +60,7 @@ function connect() {
         setConnected(true);
         console.log('Connected: ' + frame);
         stompClient.subscribe('/topic/PaymentMachine/' + $("#location").val(), function (message) {
-            showReply(JSON.parse(message).content);
+            showReply(message);
         });
     });
 }
@@ -74,20 +75,20 @@ function disconnect() {
 
 // Client-to-server messages.
 function sendInsertedTicket() {
-    stompClient.send("/app/PMInsertedTicket", {}, 
+    stompClient.send("/app/InsertedTicketPayer", {}, 
       JSON.stringify({'location': $("#location").val(), 'ticketNumber': $("#TicketNumber").val()}));
     vm.CancelledTransactionDisabled = false;
     vm.InsertedTicketDisabled = true;
 }
 
 function sendInsertedCurrency( amount ) {
-    stompClient.send("/app/InsertedCurrency", {}, 
+    stompClient.send("/app/InsertedCurrencyPayer", {}, 
       JSON.stringify({'location': $("#location").val(), 'amount': amount}));
     vm.InsertedCurrencyDisabled = true;
 }
 
 function sendToServer( messageName ) {
-    stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
+    stompClient.send("/app/" + messageName + "Payer", {}, JSON.stringify({'location': $("#location").val()}));
     if ( messageName == "TicketCollected" )
     	initialize();
 }
@@ -118,8 +119,8 @@ function showReply(message) {
     	vm.InsufficientChange = false;
     } else if ( messageName == "DispenseChange" ) {
     	vm.ChangeDispensed = Number( JSON.parse(payload).Amount ).toFixed(2).toString();
-    } else if ( messageName == "TransactionCancelled ) {
-    	vm.CancelReason = JSON.parse(payload).Why;
+    } else if ( messageName == "TransactionCancelled" ) {
+    	vm.CancelReason = "Transaction cancelled: " + JSON.parse(payload).Why;
     }
 }
 

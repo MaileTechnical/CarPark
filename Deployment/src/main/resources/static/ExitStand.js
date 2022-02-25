@@ -22,7 +22,7 @@ function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
-        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val()}));
+        stompClient.send("/app/RegisterExit", {}, JSON.stringify({'location': $("#location").val()}));
     }
     else {
         initialize();
@@ -64,7 +64,7 @@ function toggleMsgs() {
 
 // Client-to-server messages.
 function sendToServer( messageName ) {
-    stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
+    stompClient.send("/app/" + messageName + "Exit", {}, JSON.stringify({'location': $("#location").val()}));
     if ( messageName == "VehicleWaiting" ) {
     	vm.InsertedTicketDisabled = false;
     	vm.VehicleWaitingDisabled = true;
@@ -74,7 +74,7 @@ function sendToServer( messageName ) {
 
 function sendInsertedTicket() {
     if ( $("#TicketNumber").val() != 0 ) {
-        stompClient.send("/app/InsertedTicket", {}, 
+        stompClient.send("/app/InsertedTicketExit", {}, 
           JSON.stringify({'location': $("#location").val(), 'ticketNumber': $("#TicketNumber").val()}));
         vm.InsertedTicketDisabled = true;
     }

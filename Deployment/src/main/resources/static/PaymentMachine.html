@@ -68,7 +68,7 @@
         <button v-bind:disabled="TicketCollectedDisabled" id="TicketCollected" class="btn btn-primary" type="submit">Collect Ticket</button>
     </div>
     <div class="row">
-        <h5 style="color:blue;">Transaction cancelled: {{ CancelReason }}</h5>
+        <h5 style="color:blue;"> {{ CancelReason }}</h5>
     </div>
     <div v-show="ShowMsgs" class="row">
         <div class="col-md-12">

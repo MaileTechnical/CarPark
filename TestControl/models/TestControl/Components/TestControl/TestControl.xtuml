@@ -245,8 +245,8 @@ INSERT INTO SPR_PS
 	VALUES ("080ef6c8-a4c1-4e89-9419-29d8d5873a84",
 	'AdvanceTime',
 	'',
-	'',
-	3,
+	'::AdvanceTime( hours:param.hours, minutes:param.minutes );',
+	1,
 	0,
 	1);
 INSERT INTO C_EP_PROXY
@@ -265,8 +265,8 @@ INSERT INTO SPR_PS
 	VALUES ("e34fdcdf-f70e-42a1-a756-464bcafd1ce4",
 	'SetTime',
 	'',
-	'',
-	3,
+	'::SetTime( year:param.year, month:param.month, day:param.day, hour:param.hour, minute:param.minute );',
+	1,
 	0,
 	2);
 INSERT INTO C_EP_PROXY

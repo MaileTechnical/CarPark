@@ -20,6 +20,7 @@ const EntryStand = {
     return {
       location: '',
       activated: false,
+      ticketNumber: '',
       ticketStatus: 'NOTREQUESTED',
       barrier: 'CLOSED',
       delayed: false,
@@ -47,6 +48,7 @@ const EntryStand = {
     },
     reset() {
       this.activated = false;
+      this.ticketNumber = '';
       this.ticketStatus = "NOTREQUESTED";
       this.barrier = "CLOSED";
       this.delayed = false;
@@ -214,8 +216,8 @@ function handleReply(message) {
     }
 
     if ( messageName == "Register" ) {
-    	location = JSON.parse( payload ).location;
-    	peripheral = JSON.parse( payload ).peripheral;
+    	location = JSON.parse( payload ).Location;
+    	peripheral = JSON.parse( payload ).Peripheral;
     	if ( peripheral == "Entry" ) {
     	  if ( ! entrystands.has( location ) ) {
     	      makeEntry(location);
@@ -229,9 +231,9 @@ function handleReply(message) {
     
     // Instance-specific messages.
     if ( messageName == "ActivateEntryStand" ) {
-    	location = JSON.parse( payload ).location;
-    	barrier = JSON.parse( payload ).barrier;
-    	ticketStatus = JSON.parse( payload ).ticket;
+    	location = JSON.parse( payload ).Location;
+    	barrier = JSON.parse( payload ).Barrier;
+    	ticketStatus = JSON.parse( payload ).Ticket;
     	entry = entrystands.get(location);
     	if ( entry ) {
     	  entry.setTicketStatus(ticketStatus);
@@ -239,10 +241,10 @@ function handleReply(message) {
     	  entry.setActive(true);
     	}
     } else if ( messageName == "ActivateExitStand" ) {
-    	location = JSON.parse( payload ).location;
-    	barrier = JSON.parse( payload ).barrier;
-    	ticketStatus = JSON.parse( payload ).ticket;
-    	exitDeadline = JSON.parse( payload ).exitDeadline;
+    	location = JSON.parse( payload ).Location;
+    	barrier = JSON.parse( payload ).Barrier;
+    	ticketStatus = JSON.parse( payload ).Ticket;
+    	exitDeadline = JSON.parse( payload ).ExitDeadline;
     	exit = exitstands.get(location);
     	if ( exit ) {
     	  exit.setTicketStatus(ticketStatus);
@@ -251,28 +253,28 @@ function handleReply(message) {
     	  exit.setActive(true);
     	}
     } else if ( messageName == "DeactivateEntryStand" ) {
-    	location = JSON.parse( payload ).location;
+    	location = JSON.parse( payload ).Location;
     	entry = entrystands.get(location);
     	if ( entry ) {
     	  entry.reset();
     	}
     } else if ( messageName == "DeactivateExitStand" ) {
-    	location = JSON.parse( payload ).location;
+    	location = JSON.parse( payload ).Location;
     	exit = exitstands.get(location);
     	if ( exit ) {
     	  exit.reset();
     	}
     } else if ( messageName == "DelayedEntry" ) {
-    	location = JSON.parse( payload ).location;
+    	location = JSON.parse( payload ).Location;
     	entry = entrystands.get(location);
     	if ( entry ) {
     	  entry.setDelayed(true);
     	}
     } else if ( messageName == "TardyExit" ) {
-    	location = JSON.parse( payload ).location;
-    	ticketNumber = JSON.parse( payload ).ticketNumber;
-    	amount = Number( JSON.parse( payload ).additionalCharge ).toFixed(2);
-    	duration = Number( JSON.parse( payload ).overstay ).toFixed(2);
+    	location = JSON.parse( payload ).Location;
+    	ticketNumber = JSON.parse( payload ).TicketNumber;
+    	amount = Number( JSON.parse( payload ).AdditionalCharge ).toFixed(2);
+    	duration = Number( JSON.parse( payload ).Overstay ).toFixed(2);
      	exit = exitstands.get(location);
     	if ( exit ) {
     	  exit.setTicketNumber(ticketNumber);
@@ -281,10 +283,10 @@ function handleReply(message) {
     	  exit.setTardyExit(true);
     	}
     } else if ( messageName == "UnpaidStayExit" ) {
-    	location = JSON.parse( payload ).location;
-    	ticketNumber = JSON.parse( payload ).ticketNumber;
-    	amount = Number( JSON.parse( payload ).charge ).toFixed(2);
-    	duration = Number( JSON.parse( payload ).duration ).toFixed(2);
+    	location = JSON.parse( payload ).Location;
+    	ticketNumber = JSON.parse( payload ).TicketNumber;
+    	amount = Number( JSON.parse( payload ).Charge ).toFixed(2);
+    	duration = Number( JSON.parse( payload ).Duration ).toFixed(2);
      	exit = exitstands.get(location);
     	if ( exit ) {
     	  exit.setTicketNumber(ticketNumber);
@@ -293,8 +295,8 @@ function handleReply(message) {
     	  exit.setUnpaidStayExit(true);
     	}
     } else if ( messageName == "HelpRequest" ) {
-    	location = JSON.parse( payload ).location;
-    	peripheral = JSON.parse( payload ).peripheral;
+    	location = JSON.parse( payload ).Location;
+    	peripheral = JSON.parse( payload ).Peripheral;
     	if ( peripheral == "Entry" ) {
     	  entry = entrystands.get(location);
     	  if ( entry ) {
@@ -311,11 +313,11 @@ function handleReply(message) {
     	}
     // Non-instance-specific.
     } else if ( messageName == "OccupancyUpdate" ) {
-    	vm.Occupancy = JSON.parse( payload ).occupancy;
-    	vm.Capacity = JSON.parse( payload ).capacity;
-    	vm.Availability = JSON.parse( payload ).availability;
+    	vm.Occupancy = JSON.parse( payload ).Occupancy;
+    	vm.Capacity = JSON.parse( payload ).Capacity;
+    	vm.Availability = JSON.parse( payload ).Availability;
     } else if ( messageName == "DateTimeUpdate" ) {
-    	vm.DateTime = JSON.parse( payload ).dateTime;
+    	vm.DateTime = JSON.parse( payload ).DateTime;
     }
 }
 
