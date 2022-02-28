@@ -3,7 +3,7 @@ var stompClient = null;
 var vm = new Vue({
 	el: '#main-content',
 	data: {
-	    InsertedTicketDisabled: false,
+	    InsertedTicketDisabled: true,
 	    InsertedCurrencyDisabled: true,
 	    TicketCollectedDisabled : true,
 	    WaivedChangeDisabled: true,
@@ -38,7 +38,8 @@ function setConnected(connected) {
         if (document.getElementById('dispenses').checked){
             makesChange = true;
         }
-        stompClient.send("/app/PMRegister", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
+        vm.InsertedTicketDisabled = false;
+        stompClient.send("/app/RegisterPayer", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
     }
     else {
         initialize();
@@ -53,13 +54,13 @@ function toggleMsgs() {
 // When connecting, subscribe to a location-specific topic to receive
 // messages sent from the server.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkPayer-websocket');
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/PaymentMachine/' + $("#location").val(), function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/PaymentMachine/' + $("#location").val(), function (message) {
+            showReply(message);
         });
     });
 }
@@ -74,21 +75,21 @@ function disconnect() {
 
 // Client-to-server messages.
 function sendInsertedTicket() {
-    stompClient.send("/app/PMInsertedTicket", {}, 
+    stompClient.send("/app/InsertedTicketPayer", {}, 
       JSON.stringify({'location': $("#location").val(), 'ticketNumber': $("#TicketNumber").val()}));
     vm.CancelledTransactionDisabled = false;
     vm.InsertedTicketDisabled = true;
 }
 
 function sendInsertedCurrency( amount ) {
-    stompClient.send("/app/InsertedCurrency", {}, 
+    stompClient.send("/app/InsertedCurrencyPayer", {}, 
       JSON.stringify({'location': $("#location").val(), 'amount': amount}));
     vm.InsertedCurrencyDisabled = true;
 }
 
 function sendToServer( messageName ) {
-    stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
-    if ( messageName == "PMTicketCollected" )
+    stompClient.send("/app/" + messageName + "Payer", {}, JSON.stringify({'location': $("#location").val()}));
+    if ( messageName == "TicketCollected" )
     	initialize();
 }
 
@@ -98,28 +99,28 @@ function sendToServer( messageName ) {
 // the incoming message.
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
-    if ( message.includes( "Exit deadline" ) ) {
-    	vm.ExitDeadline = message;
-    } else if ( message == "InsufficientChange" ) {
+    var messageName = JSON.parse(message.body).messageName;
+    var payload = JSON.parse(message.body).payload;
+    if ( messageName == "ExitDeadline" ) {
+    	vm.ExitDeadline = JSON.parse(payload).Amount;
+    } else if ( messageName == "InsufficientChange" ) {
         vm.InsufficientChange = true;
     	vm.WaivedChangeDisabled = false;
     	vm.InsertedCurrencyDisabled = true;
-    } else if ( message.includes( "Remaining balance"  )) {
+    } else if ( messageName == "RemainingBalance" ) {
     	vm.InsertedCurrencyDisabled = false;
         vm.CancelledTransactionDisabled = false;
-        var balanceIndex = message.indexOf( ": " ) + 2;
-        vm.RemainingBalance = "Remaining balance: " + (Number( message.slice( balanceIndex ) ).toFixed(2)).toString();
-    } else if ( message == "ReturnedTicket" ) {
+        vm.RemainingBalance = Number( JSON.parse(payload).Amount ).toFixed(2).toString();
+    } else if ( messageName == "ReturnedTicket" ) {
     	vm.TicketCollectedDisabled = false;
     	vm.CancelledTransactionDisabled = true;
     	vm.InsertedCurrencyDisabled = true;
     	vm.WaivedChangeDisabled = true;
     	vm.InsufficientChange = false;
-    } else if ( message.includes( "Dispense change" ) ) {
-    	var changeIndex = message.indexOf( ": " ) + 2;
-    	vm.ChangeDispensed = "Change dispensed: " + (Number( message.slice( changeIndex ) ).toFixed(2)).toString();
-    } else if ( message.includes( "Transaction cancelled by" ) ) {
-    	vm.CancelReason = message;
+    } else if ( messageName == "DispenseChange" ) {
+    	vm.ChangeDispensed = Number( JSON.parse(payload).Amount ).toFixed(2).toString();
+    } else if ( messageName == "TransactionCancelled" ) {
+    	vm.CancelReason = "Transaction cancelled: " + JSON.parse(payload).Why;
     }
 }
 
@@ -138,6 +139,6 @@ $(function () {
     $( "#InsertedCurrency20" ).click(function() { sendInsertedCurrency( "20" ); });
     $( "#CancelledTransaction" ).click(function() { sendToServer( "CancelledTransaction" ); });
     $( "#WaivedChange" ).click(function() { sendToServer( "WaivedChange" ); });
-    $( "#TicketCollected" ).click(function() { sendToServer( "PMTicketCollected" ); });
+    $( "#TicketCollected" ).click(function() { sendToServer( "TicketCollected" ); });
     $( "#msgdisplay" ).click(function() { toggleMsgs(); });
 });

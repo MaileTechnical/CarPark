@@ -1,0 +1,145 @@
+-- BP 7.1.6 content: Interface syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_I
+	VALUES ("8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	"00000000-0000-0000-0000-000000000000",
+	'TimeControl',
+	'');
+INSERT INTO C_EP
+	VALUES ("aee1fbb1-61c4-4572-9ff1-89cc5997967d",
+	"8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	-1,
+	'AdvanceTime',
+	'',
+	1);
+INSERT INTO C_AS
+	VALUES ("aee1fbb1-61c4-4572-9ff1-89cc5997967d",
+	'AdvanceTime',
+	'',
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("4022fd11-8a29-4b4c-9b7d-9f44f8ec0764",
+	"aee1fbb1-61c4-4572-9ff1-89cc5997967d",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'hours',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("68711641-ca0b-4a3d-84f0-ae9205dfb540",
+	"aee1fbb1-61c4-4572-9ff1-89cc5997967d",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'minutes',
+	'',
+	0,
+	'',
+	"4022fd11-8a29-4b4c-9b7d-9f44f8ec0764");
+INSERT INTO C_EP
+	VALUES ("05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	-1,
+	'SetTime',
+	'',
+	2);
+INSERT INTO C_AS
+	VALUES ("05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	'SetTime',
+	'',
+	0,
+	"aee1fbb1-61c4-4572-9ff1-89cc5997967d");
+INSERT INTO C_PP
+	VALUES ("d8ddd108-ea4d-4184-8ba9-21067a807581",
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'year',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PP
+	VALUES ("8c5aa696-9f77-47bd-b285-776a44a25137",
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'month',
+	'',
+	0,
+	'',
+	"d8ddd108-ea4d-4184-8ba9-21067a807581");
+INSERT INTO C_PP
+	VALUES ("54a08087-4e62-4e67-8772-e9f607835a15",
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'day',
+	'',
+	0,
+	'',
+	"8c5aa696-9f77-47bd-b285-776a44a25137");
+INSERT INTO C_PP
+	VALUES ("a83ab8fe-1311-43b1-9c12-b9a219826082",
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'hour',
+	'',
+	0,
+	'',
+	"54a08087-4e62-4e67-8772-e9f607835a15");
+INSERT INTO C_PP
+	VALUES ("912dc410-c762-40c7-b4f6-432b03c492bb",
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370",
+	"ba5eda7a-def5-0000-0000-000000000002",
+	'minute',
+	'',
+	0,
+	'',
+	"a83ab8fe-1311-43b1-9c12-b9a219826082");
+INSERT INTO C_EP
+	VALUES ("0479258b-5787-4473-a0c1-7080160eb8d6",
+	"8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	-1,
+	'GetTime',
+	'',
+	3);
+INSERT INTO C_AS
+	VALUES ("0479258b-5787-4473-a0c1-7080160eb8d6",
+	'GetTime',
+	'',
+	0,
+	"05c9c0ff-4040-4ee8-85ef-fe9c677d6370");
+INSERT INTO C_EP
+	VALUES ("0e14d5c5-d608-4a23-b77b-834b0bea0cea",
+	"8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	-1,
+	'CurrentDateTime',
+	'',
+	4);
+INSERT INTO C_AS
+	VALUES ("0e14d5c5-d608-4a23-b77b-834b0bea0cea",
+	'CurrentDateTime',
+	'',
+	1,
+	"0479258b-5787-4473-a0c1-7080160eb8d6");
+INSERT INTO C_PP
+	VALUES ("5ea79e57-e5fe-430c-bda7-cae1da36f740",
+	"0e14d5c5-d608-4a23-b77b-834b0bea0cea",
+	"ba5eda7a-def5-0000-0000-000000000004",
+	'content',
+	'',
+	0,
+	'',
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO PE_PE
+	VALUES ("8450ac65-b906-4ea8-afe3-3c82673a94b0",
+	1,
+	"58c32c40-6240-4b6f-9380-cbe2bbb0566e",
+	"00000000-0000-0000-0000-000000000000",
+	6);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("58c32c40-6240-4b6f-9380-cbe2bbb0566e",
+	"d7592564-3100-4fba-8bbf-7843cd18a789",
+	"d7592564-3100-4fba-8bbf-7843cd18a789",
+	'Interfaces',
+	'',
+	0,
+	'../Interfaces.xtuml');

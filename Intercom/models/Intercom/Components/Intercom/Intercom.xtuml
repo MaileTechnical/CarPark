@@ -1,0 +1,366 @@
+-- BP 7.1.6 content: Component syschar: 3 persistence-version: 7.1.6
+
+INSERT INTO C_C
+	VALUES ("2b98594e-3d47-47b7-bcb6-73889693076d",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000",
+	'Intercom',
+	'Routes help requests from a peripheral to the operator console.',
+	0,
+	"00000000-0000-0000-0000-000000000000",
+	0,
+	'',
+	'');
+INSERT INTO GD_MD
+	VALUES ("0621ca7e-2984-45b3-8c88-c54a19fad7a8",
+	111,
+	"2b98594e-3d47-47b7-bcb6-73889693076d",
+	98,
+	0,
+	0,
+	1,
+	1,
+	1,
+	12,
+	1,
+	0,
+	0,
+	0,
+	0,
+	0,
+	'',
+	'Intercom::Components::Intercom');
+INSERT INTO GD_GE
+	VALUES ("7eaa10da-7d5c-4332-a3f2-183a5c4cb67c",
+	"0621ca7e-2984-45b3-8c88-c54a19fad7a8",
+	"2b98594e-3d47-47b7-bcb6-73889693076d",
+	103,
+	0,
+	'Intercom::Components::Intercom');
+INSERT INTO GD_SHP
+	VALUES ("7eaa10da-7d5c-4332-a3f2-183a5c4cb67c");
+INSERT INTO GD_CTR
+	VALUES ("7eaa10da-7d5c-4332-a3f2-183a5c4cb67c");
+INSERT INTO DIM_ND
+	VALUES (1176.000000,
+	399.000000,
+	"7eaa10da-7d5c-4332-a3f2-183a5c4cb67c");
+INSERT INTO DIM_GE
+	VALUES (4100.000000,
+	3100.000000,
+	"7eaa10da-7d5c-4332-a3f2-183a5c4cb67c",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("7eaa10da-7d5c-4332-a3f2-183a5c4cb67c",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_CON
+	VALUES ("e68e017c-389e-45fe-a270-24d4f1eabb47",
+	4380.000000,
+	3100.000000,
+	"7eaa10da-7d5c-4332-a3f2-183a5c4cb67c");
+INSERT INTO DIM_CON
+	VALUES ("6fc33dc6-c377-4224-8909-0f80c88513ef",
+	4944.000000,
+	3100.000000,
+	"7eaa10da-7d5c-4332-a3f2-183a5c4cb67c");
+INSERT INTO GD_GE
+	VALUES ("bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"0621ca7e-2984-45b3-8c88-c54a19fad7a8",
+	"d8c3e0b2-cf85-47a1-b0da-8fb0d5a4e213",
+	94,
+	0,
+	'Intercom::Components::Intercom::Help::Intercom');
+INSERT INTO GD_CON
+	VALUES ("bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("3de23caa-b586-46ba-9bf6-d88ff4aafc32",
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"3de23caa-b586-46ba-9bf6-d88ff4aafc32");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"3de23caa-b586-46ba-9bf6-d88ff4aafc32",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("3de23caa-b586-46ba-9bf6-d88ff4aafc32",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("88e4ad72-5faa-4506-8a82-3f4256d8f4e3",
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"88e4ad72-5faa-4506-8a82-3f4256d8f4e3");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"88e4ad72-5faa-4506-8a82-3f4256d8f4e3",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("88e4ad72-5faa-4506-8a82-3f4256d8f4e3",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("37b37ac9-2625-493a-9dac-ca30460d5309",
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"37b37ac9-2625-493a-9dac-ca30460d5309");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"37b37ac9-2625-493a-9dac-ca30460d5309",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("37b37ac9-2625-493a-9dac-ca30460d5309",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("5df3cf7b-08d9-49dc-9a95-57df365ef1a8",
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"00000000-0000-0000-0000-000000000000",
+	"99c0615d-d78b-4dbe-8627-5cf7abb10e60",
+	"dc1faa32-bc00-4954-b477-afec4b5c9ac9");
+INSERT INTO DIM_WAY
+	VALUES ("99c0615d-d78b-4dbe-8627-5cf7abb10e60",
+	4380.000000,
+	3100.000000,
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("dc1faa32-bc00-4954-b477-afec4b5c9ac9",
+	4382.000000,
+	3030.000000,
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"00000000-0000-0000-0000-000000000000",
+	"99c0615d-d78b-4dbe-8627-5cf7abb10e60");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("bbd65db1-8ce8-4906-9c79-24139fd5c1d9",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("e68e017c-389e-45fe-a270-24d4f1eabb47",
+	"00000000-0000-0000-0000-000000000000",
+	"bbd65db1-8ce8-4906-9c79-24139fd5c1d9");
+INSERT INTO GD_GE
+	VALUES ("19c53d89-c824-4f80-bf1c-252befec03b7",
+	"0621ca7e-2984-45b3-8c88-c54a19fad7a8",
+	"6bb464fb-9af7-4f56-8210-5c41bb81ac66",
+	93,
+	0,
+	'Intercom::Components::Intercom::Operator::Intercom');
+INSERT INTO GD_CON
+	VALUES ("19c53d89-c824-4f80-bf1c-252befec03b7",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("a3138cc1-7b3b-4622-b8ce-9f038938f1df",
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	0,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"a3138cc1-7b3b-4622-b8ce-9f038938f1df");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"a3138cc1-7b3b-4622-b8ce-9f038938f1df",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("a3138cc1-7b3b-4622-b8ce-9f038938f1df",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("e4495b84-2def-416a-9308-9da7460c1665",
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	2,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"e4495b84-2def-416a-9308-9da7460c1665");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"e4495b84-2def-416a-9308-9da7460c1665",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("e4495b84-2def-416a-9308-9da7460c1665",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_CTXT
+	VALUES ("b3bc1c7a-f6b9-40dd-ae56-8bd5b8aff4cd",
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	1,
+	0.000000,
+	0.000000);
+INSERT INTO DIM_ND
+	VALUES (0.000000,
+	0.000000,
+	"b3bc1c7a-f6b9-40dd-ae56-8bd5b8aff4cd");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"b3bc1c7a-f6b9-40dd-ae56-8bd5b8aff4cd",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("b3bc1c7a-f6b9-40dd-ae56-8bd5b8aff4cd",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO GD_LS
+	VALUES ("867eb9fc-9f4e-42b8-9503-2a8fab4362b1",
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	"00000000-0000-0000-0000-000000000000",
+	"5f364c0c-4683-47de-834f-df743ca7fa0a",
+	"ae38803b-158c-4a64-aaf4-59cf27564299");
+INSERT INTO DIM_WAY
+	VALUES ("5f364c0c-4683-47de-834f-df743ca7fa0a",
+	4944.000000,
+	3100.000000,
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	"00000000-0000-0000-0000-000000000000",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_WAY
+	VALUES ("ae38803b-158c-4a64-aaf4-59cf27564299",
+	4946.000000,
+	3030.000000,
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	"00000000-0000-0000-0000-000000000000",
+	"5f364c0c-4683-47de-834f-df743ca7fa0a");
+INSERT INTO DIM_GE
+	VALUES (0.000000,
+	0.000000,
+	"19c53d89-c824-4f80-bf1c-252befec03b7",
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ELE
+	VALUES ("19c53d89-c824-4f80-bf1c-252befec03b7",
+	0,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO DIM_ED
+	VALUES ("6fc33dc6-c377-4224-8909-0f80c88513ef",
+	"00000000-0000-0000-0000-000000000000",
+	"19c53d89-c824-4f80-bf1c-252befec03b7");
+INSERT INTO DIM_DIA
+	VALUES ("0621ca7e-2984-45b3-8c88-c54a19fad7a8",
+	'',
+	1.000000,
+	0.000000,
+	0.000000,
+	"00000000-0000-0000-0000-000000000000");
+INSERT INTO C_PO
+	VALUES ("7d55318f-a526-4cea-9573-ff95fabed6d5",
+	"2b98594e-3d47-47b7-bcb6-73889693076d",
+	'Help',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("d8c3e0b2-cf85-47a1-b0da-8fb0d5a4e213",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
+	"00000000-0000-0000-0000-000000000000",
+	"7d55318f-a526-4cea-9573-ff95fabed6d5");
+INSERT INTO C_P
+	VALUES ("d8c3e0b2-cf85-47a1-b0da-8fb0d5a4e213",
+	'Intercom',
+	'Unnamed Interface',
+	'',
+	'Intercom::Help::Intercom');
+INSERT INTO SPR_PEP
+	VALUES ("759a1711-6d1b-4cbc-9b7d-011db7cc79dd",
+	"4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
+	"d8c3e0b2-cf85-47a1-b0da-8fb0d5a4e213");
+INSERT INTO SPR_PS
+	VALUES ("759a1711-6d1b-4cbc-9b7d-011db7cc79dd",
+	'HelpRequest',
+	'Ask operator for assistance in case of a fault at an entry or exit stand.
+This signal is not implemented; currently there is no support for client-to-client communication.',
+	'send Operator::HelpRequest( Location:param.Location, Peripheral:param.Peripheral );',
+	1,
+	0,
+	0);
+INSERT INTO C_EP_PROXY
+	VALUES ("4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
+	-1,
+	'HelpRequest',
+	'Ask operator for assistance in case of a fault at an entry or exit stand.
+This signal is not implemented; currently there is no support for client-to-client communication.',
+	0,
+	'../../Interfaces/Intercom/Intercom.xtuml');
+INSERT INTO C_I_PROXY
+	VALUES ("7b83c685-9188-420a-8363-fb96f8fef6c1",
+	"00000000-0000-0000-0000-000000000000",
+	'Intercom',
+	'This interface is not actually implemented, but represents, conceptually, what is desired.
+The present implementation uses socket communication only for the application interfaces.
+A help request bypasses the application and directly invokes messaging to the operator.',
+	'../../Interfaces/Intercom/Intercom.xtuml');
+INSERT INTO C_PO
+	VALUES ("87e21f0f-78cb-4a93-9273-1ce971ab49c0",
+	"2b98594e-3d47-47b7-bcb6-73889693076d",
+	'Operator',
+	0,
+	0,
+	'');
+INSERT INTO C_IR
+	VALUES ("6bb464fb-9af7-4f56-8210-5c41bb81ac66",
+	"7b83c685-9188-420a-8363-fb96f8fef6c1",
+	"00000000-0000-0000-0000-000000000000",
+	"87e21f0f-78cb-4a93-9273-1ce971ab49c0");
+INSERT INTO C_R
+	VALUES ("6bb464fb-9af7-4f56-8210-5c41bb81ac66",
+	'Intercom',
+	'',
+	'Unnamed Interface',
+	'Intercom::Operator::Intercom');
+INSERT INTO SPR_REP
+	VALUES ("e6e4f646-2859-4ff9-87c8-05f728628afa",
+	"4f2ca4d1-7ea6-4f37-9085-50cf13bc2252",
+	"6bb464fb-9af7-4f56-8210-5c41bb81ac66");
+INSERT INTO SPR_RS
+	VALUES ("e6e4f646-2859-4ff9-87c8-05f728628afa",
+	'HelpRequest',
+	'Ask operator for assistance in case of a fault at an entry or exit stand.
+This signal is not implemented; currently there is no support for client-to-client communication.',
+	'',
+	3,
+	0,
+	0);
+INSERT INTO PE_PE
+	VALUES ("2b98594e-3d47-47b7-bcb6-73889693076d",
+	1,
+	"a072561f-900a-40d2-9bb9-0cfb6154b834",
+	"00000000-0000-0000-0000-000000000000",
+	2);
+INSERT INTO EP_PKG_PROXY
+	VALUES ("a072561f-900a-40d2-9bb9-0cfb6154b834",
+	"be0ebc34-0a1f-4bb9-b3f0-247c7e69aaa2",
+	"be0ebc34-0a1f-4bb9-b3f0-247c7e69aaa2",
+	'Components',
+	'',
+	0,
+	'../Components.xtuml');

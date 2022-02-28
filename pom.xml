@@ -18,5 +18,6 @@
     <module>PaymentMachine</module>
     <module>OperatorConsole</module>
     <module>TestControl</module>
+    <module>Intercom</module>
   </modules>
 </project>

@@ -22,7 +22,7 @@ function setConnected(connected) {
     $("#connect").prop("disabled", connected);
     $("#disconnect").prop("disabled", !connected);
     if (connected) {
-        stompClient.send("/app/Register", {}, JSON.stringify({'location': $("#location").val()}));
+        stompClient.send("/app/RegisterEntry", {}, JSON.stringify({'location': $("#location").val()}));
     }
     else {
         initialize();
@@ -35,15 +35,18 @@ function toggleMsgs() {
 }
 
 // When connecting, subscribe to a location-specific topic to receive
-// messages sent from the server.
+// messages sent from the server.  Also open a socket so that intercom 
+// messages can be sent out of this client.
 function connect() {
-    var socket = new SockJS('/Carpark-websocket');
+    var socket = new SockJS('/CarparkEntry-websocket');
+    var intercomSocket = new SockJS( '/CarparkIntercom-websocket');
+    stompIntercom = Stomp.over(intercomSocket);
     stompClient = Stomp.over(socket);
     stompClient.connect({}, function (frame) {
         setConnected(true);
         console.log('Connected: ' + frame);
-        stompClient.subscribe('/topic/EntryStand/' + $("#location").val(), function (reply) {
-            showReply(JSON.parse(reply.body).content);
+        stompClient.subscribe('/topic/EntryStand/' + $("#location").val(), function (message) {
+            showReply(message);
         });
     });
 }
@@ -52,18 +55,21 @@ function disconnect() {
     if (stompClient !== null) {
         stompClient.disconnect();
     }
+    if (stompIntercom !== null) {
+    	stompIntercom.disconnect();
+    }
     setConnected(false);
     console.log("Disconnected");
 }
 
 // Client-to-server messages.
 function sendToServer( messageName ) {
-    stompClient.send("/app/" + messageName, {}, JSON.stringify({'location': $("#location").val()}));
+    stompClient.send("/app/" + messageName + "Entry", {}, JSON.stringify({'location': $("#location").val()}));
 }
 
 // Client-to-client messages - in fact, uses client-server-client path.
 function sendToOperator( messageName ) {
-    stompClient.send("/app/" + messageName, {}, 
+    stompIntercom.send("/app/" + messageName, {}, 
                      JSON.stringify({'location': $("#location").val(), 'peripheral': "Entry"}));
 }
 
@@ -72,16 +78,17 @@ function sendToOperator( messageName ) {
 // the incoming message.
 function showReply(message) {
     $("#replies").append("<tr><td>" + message + "</td></tr>");
-    if ( message == "Ticket request enabled" ) {
+    var messageName = JSON.parse(message.body).messageName;
+    if ( messageName == "TicketRequestEnabled" ) {
     	vm.TicketRequestDisabled = false;
-    } else if ( message == "Open barrier" ) {
+    } else if ( messageName == "OpenBarrier" ) {
     	vm.VehicleEnteredDisabled = false;
     	vm.TicketCollectedDisabled = true;
     	vm.BarrierOpen = true;
-    } else if ( message.includes( "Issue ticket"  )) {
+    } else if ( messageName == "IssueTicket" ) {
     	vm.TicketRequestDisabled = true;
     	vm.TicketCollectedDisabled = false;
-    } else if ( message == "Close barrier" ) {
+    } else if ( messageName == "CloseBarrier" ) {
     	vm.VehicleEnteredDisabled = true;
     	vm.BarrierOpen = false;
     }
