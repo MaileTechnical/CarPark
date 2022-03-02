@@ -64,26 +64,6 @@
     </dependency>
     <dependency>
       <groupId>org.xtuml</groupId>
-      <artifactId>EntryStand</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xtuml</groupId>
-      <artifactId>ExitStand</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xtuml</groupId>
-      <artifactId>OperatorConsole</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xtuml</groupId>
-      <artifactId>PaymentMachine</artifactId>
-      <version>1.0.0-SNAPSHOT</version>
-    </dependency>
-    <dependency>
-      <groupId>org.xtuml</groupId>
       <artifactId>TestControl</artifactId>
       <version>1.0.0-SNAPSHOT</version>
     </dependency>
