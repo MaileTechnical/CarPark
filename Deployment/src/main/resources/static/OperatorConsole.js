@@ -338,7 +338,7 @@ function IssueTicket( element ) {
   parent = element.parentNode.parentNode;
   for ( entry of entrystands.values() ) {
     if ( entry.$el == parent ) {
-      sendToServer( "OperatorIssueTicket", "location", entry.location );
+      sendToServer( "IssueTicket", "location", entry.location );
       entry.setHelp(false);
       break;
     }
