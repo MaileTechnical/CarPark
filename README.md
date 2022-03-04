@@ -33,10 +33,7 @@ The built-in external entities provided by BridgePoint 7 (or later) can be added
 2. Import the following projects from this repository:
 - CarPark
 - Deployment
-- EntryStand
-- ExitStand
-- OperatorConsole
-- PaymentMachine
+- Intercom
 - TestControl
 ## Running the Application on Verifier
 As part of creating a debug configuration, the specific configuration of the application to be executed must be specified.  This is accomplished by selecting a **package** containing a collection of component references connected through ports.  

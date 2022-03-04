@@ -39,7 +39,7 @@ function setConnected(connected) {
             makesChange = true;
         }
         vm.InsertedTicketDisabled = false;
-        stompClient.send("/app/RegisterPayer", {}, JSON.stringify({'location': $("#location").val(), 'dispenses': makesChange}));
+        stompClient.send("/app/RegisterPayer", {}, JSON.stringify({'location': $("#location").val(), 'makesChange': makesChange}));
     }
     else {
         initialize();
@@ -102,7 +102,7 @@ function showReply(message) {
     var messageName = JSON.parse(message.body).messageName;
     var payload = JSON.parse(message.body).payload;
     if ( messageName == "ExitDeadline" ) {
-    	vm.ExitDeadline = JSON.parse(payload).Amount;
+    	vm.ExitDeadline = JSON.parse(payload).Deadline;
     } else if ( messageName == "InsufficientChange" ) {
         vm.InsufficientChange = true;
     	vm.WaivedChangeDisabled = false;

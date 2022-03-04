@@ -13,10 +13,6 @@
   <modules>
     <module>Deployment</module>
     <module>CarPark</module>
-    <module>EntryStand</module>
-    <module>ExitStand</module>
-    <module>PaymentMachine</module>
-    <module>OperatorConsole</module>
     <module>TestControl</module>
     <module>Intercom</module>
   </modules>
