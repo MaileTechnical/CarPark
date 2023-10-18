@@ -15,7 +15,7 @@ Instructions for populating a workspace for each configuration are provided belo
 
 The built-in external entities provided by BridgePoint 7 (or later) can be added to a workspace as follows:
 1. Create an xtUML project named *BuiltInEEs*.
-2. Add a folder named *EEs* to the *BuiltInEEs* project.
+2. Add a package named *EEs* to the *BuiltInEEs* project.
 3. Select the *EEs* folder and select the context menu entry (right-click) for "Add Built-in External Entities".
 ### Interactive Testing
 1. Add the built-in external entities provided by BridgePoint 7 or later.
@@ -38,7 +38,7 @@ The built-in external entities provided by BridgePoint 7 (or later) can be added
 ## Running the Application on Verifier
 As part of creating a debug configuration, the specific configuration of the application to be executed must be specified.  This is accomplished by selecting a **package** containing a collection of component references connected through ports.  
 ### Interactive Testing
-1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-InterativeTest
+1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-InteractiveTest
 2. Enable "Log model execution activity"
 3. Disable "Run deterministically"
 4. Disable "Enable simulated time"
