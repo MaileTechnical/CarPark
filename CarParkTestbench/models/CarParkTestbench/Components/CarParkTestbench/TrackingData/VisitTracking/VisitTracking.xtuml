@@ -5,7 +5,8 @@ INSERT INTO O_OBJ
 	'VisitTracking',
 	23,
 	'VisitTracking',
-	'Holds data pertinent to visit to the carpark.',
+	'Holds data pertinent to a visit to the carpark.
+This data is available to the VisitCheck observation subtype.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_NBATTR
 	VALUES ("908aef19-73b6-47e1-b958-08867c488934",

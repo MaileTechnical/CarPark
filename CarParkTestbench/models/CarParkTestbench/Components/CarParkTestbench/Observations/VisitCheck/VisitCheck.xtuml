@@ -5,8 +5,10 @@ INSERT INTO O_OBJ
 	'VisitCheck',
 	40,
 	'VisitCheck',
-	'Observe that a ticket is returned at a pay station.
-It may be returned due to cancellation as well as full payment.',
+	'This observation can check multiple data values, requested by configuration values.
+It is a polled observation and, thus, can re-evaluate at intervals.
+Success is achieved only when no requested evaluation fails.
+The only failure mode is a polling time period timeout.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("3a8f1247-29c9-4d0d-b768-9daf9f244f3d",
@@ -70,7 +72,7 @@ INSERT INTO O_TFR
 	1,
 	'select one observation related by self->Observation[R400]; 
 
-success = true;
+success = true;  // tentatively; any data mismatch will unset this.
 now = TIM::current_seconds();
 select any tracker from instances of VisitTracking
  where ( selected.ticketNumber == self.ticketNumber );
@@ -107,13 +109,13 @@ if ( not_empty tracker )
     end if;
   end if;
 else
-  success = false;
+  success = false;  // no matching visit data
 end if;
+// If all requested evaluations passed the observation is complete.
+// If not, then allow this polled observation to re-evaluate.
 if ( success )
   LOG::LogSuccess( message:"Visit data checked OK." );
   observation.Complete( success:True );
-else
-//  observation.Complete( success:False );
 end if;
 ',
 	1,
@@ -321,7 +323,7 @@ INSERT INTO O_ATTR
 	"7f11a14f-8a66-4978-afbc-8f3aecd07207",
 	"a8222219-f962-4abf-925b-76c2ea5cae5f",
 	'payDisposition',
-	'',
+	'If not ''ignore'', check for correct payment status.',
 	'',
 	'payDisposition',
 	0,
@@ -339,7 +341,7 @@ INSERT INTO O_ATTR
 	"7f11a14f-8a66-4978-afbc-8f3aecd07207",
 	"ef26126a-9635-4f99-9675-49cd74850880",
 	'changeDisposition',
-	'',
+	'If not ''ignore'', check for correct change/refund status.',
 	'',
 	'changeDisposition',
 	0,
