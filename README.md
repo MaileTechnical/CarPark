@@ -7,9 +7,10 @@ This is Open Source Software (OSS) licensed under Apache 2.0 (http://www.apache.
 Documentation is licensed under Creative Commons (https://creativecommons.org/).
 ## Configurations
 The following configurations exist:
-1. Interactive Testing.  Employs a modeled test bench, enabling interactive testing with Verifier and Ciera-generated code using `pom-testbench.xml`.
+1. Interactive Testing.  Explicitly models interacting entities in a modeled test bench, enabling testing with Verifier and Ciera-generated code using `pom-testbench.xml`.  Note that the name dates to when individual test functions were invoked manually; a state machine-driven test bucket now automates test case execution.
 2. Automated Testing.  Intended for regression testing with both Verifier and generated code, this configuration employs a modeled test suite covering many use cases.  Use `pom-autotest.xml` for this one.
 3. Browser-based Clients.  Leverages browser-based clients representing system peripherals such as entry and exit stands, payment machines, and an operator console.  Intended for testing and demonstration of code generated from the xtUML model of the carpark control system connected to externally produced code.  Use `pom-clients.xml` for this configuration.
+Note: the Interactive Testing test bench, an earlier creation, uses 'concrete' models of the entities which interact with the control system - the entry/exit stands, a patron, etc. Automated testing, a later effort, adopts a more abstract approach with a test bench that models interactions with the control system and uses an application-independent test framework for test case sequencing.
 ## Populating a Workspace
 Instructions for populating a workspace for each configuration are provided below.  In all cases, the "CarPark" project referred to below is the xtUML project by that name, not the top-level directory which happens to have the same name.  The import wizard lists each project in the repository as "CarPark/\<projectName>", so the "CarPark" project referred to below is shown as "CarPark/CarPark".
 
@@ -44,7 +45,7 @@ As part of creating a debug configuration, the specific configuration of the app
 4. Disable "Enable simulated time"
 5. Select the InteractiveTesting configuration **package** within the InteractiveTesting **xtUML project**
 6. Run Verifier using this debug configuration
-7. Refer to the class descriptions of the test case classes within the InteractiveTestbench component for details on executing each test case or a bucket of multiple test cases.
+7. Execute either of the RunXxx operations defined on the NominalBucket in TestCases_Nominal package.
 ### Automated Testing
 1. Create a debug configuration of type "xtUML eXecute Application" and name it Carpark-AutoTest
 2. Enable "Log model execution activity"

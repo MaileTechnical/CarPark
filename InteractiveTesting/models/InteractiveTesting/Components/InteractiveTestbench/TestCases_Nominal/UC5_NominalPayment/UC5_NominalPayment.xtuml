@@ -5,13 +5,7 @@ INSERT INTO O_OBJ
 	'UC5_NominalPayment',
 	2,
 	'UC5_NominalPayment',
-	'1. Launch Verifier on the InteractiveTesting configuration.
-2. Execute CarparkControl/Initialization/CreatePEIs().
-3. Execute CarparkControl/Initialization/Run().
-4. Execute InteractiveTestbench/TestCases/UC01_NominalEntry/Run().
-5. Wait about 20 seconds and definitely no more than 40 seconds.
-6. Execute InteractiveTestbench/TestCases/UC05_NominalPayment/Run().
-7. Using Session Explorer verify expected post conditions.',
+	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("c065fe99-397c-4a57-b0d7-d4e66acbf423",

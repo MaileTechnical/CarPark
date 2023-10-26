@@ -5,12 +5,7 @@ INSERT INTO O_OBJ
 	'UC1_NominalEntry',
 	1,
 	'UC1_NominalEntry',
-	'1.	Launch Verifier with InteractiveTesting configuration and logging enabled.
-2.	Execute CarparkControl/Initialization/CreatePEIs
-3.	Execute CarparkControl/Initialization/Run
-4.	Execute InteractiveTestbench/TestCases/UC1_NominalEntry/Run
-5.	Verify expected post conditions using Session Explorer and by inspecting the console log.
-',
+	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("189ce580-e015-4994-abc3-77985a05ca1d",
