@@ -5,7 +5,7 @@ INSERT INTO O_OBJ
 	'NominalBucket',
 	4,
 	'NominalBucket',
-	'A test bucket which runs a state machine to executes a series of test cases.',
+	'A test bucket which runs a state machine to execute a series of test cases.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("a5766775-3436-41d2-8e06-b6cd4db263ab",
