@@ -5,18 +5,7 @@ INSERT INTO O_OBJ
 	'UC11_NominalExit',
 	3,
 	'UC11_NominalExit',
-	'1. Launch Verifier on the InteractiveTesting configuration.
-2. Execute CarparkControl/Initialization/CreatePEIs().
-3. Execute CarparkControl/Initialization/Run().
-4. Execute InteractiveTestbench/TestCases/UC01_NominalEntry/Run().
-5. Wait about 20 seconds and definitely no more than 40 seconds.
-6. Execute InteractiveTestbench/TestCases/UC05_NominalPayment/Run().
-7. Execute InteractiveTestbench/TestCases/UC11_NominalExit/Run().
-8. Using Session Explorer verify expected post conditions.
-Specifically, ensure that the Operator instance in the test bench shows
-true for all boolean attributes, 1 for OccupancyIncreased and
-OccupancyDecreased, and 0 for Occupancy.  Verify that all instances in
-the CarparkControl component are in their "resting" states.',
+	'',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("0b40853e-175a-489e-bbb5-bd14ee7c3b31",

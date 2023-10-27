@@ -5,17 +5,15 @@ INSERT INTO O_OBJ
 	'NominalBucket',
 	4,
 	'NominalBucket',
-	'1.	Launch Verifier with InteractiveTesting configuration and logging enabled.
-2.	Execute CarparkControl/Initialization/CreatePEIs
-3.	Execute CarparkControl/Initialization/Run
-4.	Execute InteractiveTestbench/TestCases/NominalBucket/Run
-5.	Verify "bucket successful" in the console log.',
+	'A test bucket which runs a state machine to execute a series of test cases.',
 	"00000000-0000-0000-0000-000000000000");
 INSERT INTO O_TFR
 	VALUES ("a5766775-3436-41d2-8e06-b6cd4db263ab",
 	"894fb0f9-871b-4790-bca9-eefb4cf07f9a",
 	'RunNominals',
-	'',
+	'Create an instance of this test bucket and cause the state machine to execute the test cases.
+This test bucket exercises 3 test cases based on UC1, UC5 and UC11 taken from the SRS.
+The nominal test cases should run without error, noting "bucket successful" in the console log.',
 	"ba5eda7a-def5-0000-0000-000000000000",
 	0,
 	'create object instance bucket of NominalBucket;
